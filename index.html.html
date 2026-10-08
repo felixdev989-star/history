@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>حل كتاب الأداءات والتقييمات - التاريخ الوطني - البكالوريا المصرية 2027</title>
+<style>
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.8;
+            padding: 15px;
+            padding-top: 80px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1a5276;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #2e86c1;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            background-color: #eaf2f8;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h3 {
+            color: #1a5276;
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-right: 10px;
+            border-right: 5px solid #2e86c1;
+        }
+        h4 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background-color: #f0f3f4;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        .page-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px dashed #ccc;
+            position: relative;
+            scroll-margin-top: 80px;
+        }
+        .page-number {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .qa-block {
+            margin-bottom: 25px;
+            border: 1px solid #d1d8dd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .question {
+            background-color: #e8f4fc;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1a5276;
+            border-bottom: 2px solid #b3d9f2;
+        }
+        .answer {
+            background-color: #fef9e7;
+            padding: 15px;
+            font-size: 1.05rem;
+            color: #333;
+            border-right: 5px solid #f1c40f;
+        }
+        .answer strong {
+            color: #c0392b;
+        }
+        .section-title {
+            background-color: #2e86c1;
+            color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1a5276;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: center;
+        }
+        .nav-bar a {
+            display: inline-block;
+            background-color: #2e86c1;
+            color: #fff;
+            padding: 8px 12px;
+            margin: 0 4px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .nav-bar a:hover {
+            background-color: #f1c40f;
+            color: #1a5276;
+        }
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #1a5276;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-to-top:hover {
+            background-color: #f1c40f;
+            color: #1a5276;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; padding-top: 70px; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.2rem; }
+            h3 { font-size: 1.1rem; }
+            .question, .answer { font-size: 1rem; padding: 12px; }
+            .nav-bar a { padding: 6px 8px; font-size: 0.8rem; }
+        }
+    
+
+/* ===== Unified navigation fixes ===== */
+html { scroll-behavior: smooth; }
+body { padding-top: 124px; }
+button { font: inherit; }
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background: #1a5276;
+    box-shadow: 0 2px 12px rgba(0,0,0,.22);
+}
+.unit-tabs {
+    display: flex;
+    gap: 6px;
+    padding: 8px 10px 6px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+.unit-btn, .page-btn {
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: .2s ease;
+}
+.unit-btn {
+    flex: 0 0 auto;
+    padding: 8px 12px;
+    color: #fff;
+    background: #2e86c1;
+}
+.unit-btn:hover, .unit-btn.active {
+    background: #f1c40f;
+    color: #1a5276;
+}
+.page-tabs {
+    display: flex;
+    gap: 5px;
+    padding: 5px 10px 9px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+.page-btn {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    color: #fff;
+    background: rgba(255,255,255,.16);
+    font-size: .82rem;
+}
+.page-btn:hover, .page-btn.active {
+    background: #fff;
+    color: #1a5276;
+}
+.unit-section { scroll-margin-top: 135px; }
+.page-section { scroll-margin-top: 135px; }
+.top-status {
+    text-align: center;
+    margin: 0 auto 18px;
+    max-width: 900px;
+    color: #566;
+    font-size: .9rem;
+}
+.no-js-note { display:none; }
+
+@media (max-width: 600px) {
+    body { padding-top: 112px; }
+    .unit-tabs { padding: 6px; }
+    .page-tabs { padding: 4px 6px 7px; }
+    .unit-btn { padding: 7px 9px; font-size: .8rem; }
+    .page-btn { padding: 5px 8px; font-size: .75rem; }
+    .unit-section, .page-section { scroll-margin-top: 120px; }
+}
+
+
+/* Book-order page navigation */
+.book-page-tabs{display:flex;gap:5px;overflow-x:auto;white-space:nowrap;}
+.book-page-tabs .page-btn{min-width:44px;text-align:center;}
+</style>
+</head>
+<body>
+<nav aria-label="التنقل بين الوحدات والصفحات" class="main-nav" id="mainNav">
+<div class="unit-tabs" id="unitTabs"><button class="unit-btn" data-unit="unit-1" type="button">الوحدة الأولى: مصر بين الماضي والحاضر</button><button class="unit-btn" data-unit="unit-2" type="button">الوحدة الثانية: تحولات القوة وبناء الوعي بمصر في العصر الحديث والمعاصر</button><button class="unit-btn" data-unit="unit-3" type="button">unit-3</button><button class="unit-btn" data-unit="unit-4" type="button">الوحدة الثالثة: مصر وقضايا التحرر الوطني في الوطن العربي وإفريقيا</button></div>
+<div aria-label="صفحات الوحدة الحالية" class="page-tabs book-page-tabs" id="pageTabs"><button class="page-btn" data-target="u1-page4" data-unit="unit-1" type="button">4</button><button class="page-btn" data-target="u1-page5" data-unit="unit-1" type="button">5</button><button class="page-btn" data-target="u1-page6" data-unit="unit-1" type="button">6</button><button class="page-btn" data-target="u1-page7" data-unit="unit-1" type="button">7</button><button class="page-btn" data-target="u1-page7b" data-unit="unit-1" type="button">7 (تابع)</button><button class="page-btn" data-target="u1-page8" data-unit="unit-1" type="button">8</button><button class="page-btn" data-target="u1-page8b" data-unit="unit-1" type="button">8 (تابع)</button><button class="page-btn" data-target="u1-page9" data-unit="unit-1" type="button">9</button><button class="page-btn" data-target="u1-page9b" data-unit="unit-1" type="button">9 (تابع)</button><button class="page-btn" data-target="u1-page10" data-unit="unit-1" type="button">10</button><button class="page-btn" data-target="u1-page11" data-unit="unit-1" type="button">11</button><button class="page-btn" data-target="u1-page11b" data-unit="unit-1" type="button">11 (تابع)</button><button class="page-btn" data-target="u1-page12" data-unit="unit-1" type="button">12</button><button class="page-btn" data-target="u2-page35" data-unit="unit-2" type="button">35</button><button class="page-btn" data-target="u2-page36" data-unit="unit-2" type="button">36</button><button class="page-btn" data-target="u2-page36b" data-unit="unit-2" type="button">36 (تابع)</button><button class="page-btn" data-target="u2-page37" data-unit="unit-2" type="button">37</button><button class="page-btn" data-target="u2-page38" data-unit="unit-2" type="button">38</button><button class="page-btn" data-target="u2-page39" data-unit="unit-2" type="button">39</button><button class="page-btn" data-target="u2-page40" data-unit="unit-2" type="button">40</button><button class="page-btn" data-target="u2-page41" data-unit="unit-2" type="button">41</button><button class="page-btn" data-target="u2-page42" data-unit="unit-2" type="button">42</button><button class="page-btn" data-target="u2-page43" data-unit="unit-2" type="button">43</button><button class="page-btn" data-target="u2-page45" data-unit="unit-2" type="button">45</button><button class="page-btn" data-target="u2-page46" data-unit="unit-2" type="button">46</button><button class="page-btn" data-target="u2-page46b" data-unit="unit-2" type="button">46 (تابع)</button><button class="page-btn" data-target="u2-page47" data-unit="unit-2" type="button">47</button><button class="page-btn" data-target="u2-page47b" data-unit="unit-2" type="button">47 (تابع)</button><button class="page-btn" data-target="u2-page48" data-unit="unit-2" type="button">48</button><button class="page-btn" data-target="u2-page49" data-unit="unit-2" type="button">49</button><button class="page-btn" data-target="u2-page50" data-unit="unit-2" type="button">50</button><button class="page-btn" data-target="u2-page50b" data-unit="unit-2" type="button">50 (تابع)</button><button class="page-btn" data-target="u2-page51" data-unit="unit-2" type="button">51</button><button class="page-btn" data-target="u2-page51b" data-unit="unit-2" type="button">51 (تابع)</button><button class="page-btn" data-target="u2-page52" data-unit="unit-2" type="button">52</button><button class="page-btn" data-target="u2-page52b" data-unit="unit-2" type="button">52 (تابع)</button><button class="page-btn" data-target="u2-page53" data-unit="unit-2" type="button">53</button><button class="page-btn" data-target="u2-page56" data-unit="unit-2" type="button">56</button><button class="page-btn" data-target="u2-page57" data-unit="unit-2" type="button">57</button><button class="page-btn" data-target="u2-page57b" data-unit="unit-2" type="button">57 (تابع)</button><button class="page-btn" data-target="u2-page58" data-unit="unit-2" type="button">58</button><button class="page-btn" data-target="u2-page59" data-unit="unit-2" type="button">59</button><button class="page-btn" data-target="u3-page60" data-unit="unit-3" type="button">60</button><button class="page-btn" data-target="u3-page61" data-unit="unit-3" type="button">61</button><button class="page-btn" data-target="u3-page62" data-unit="unit-3" type="button">62</button><button class="page-btn" data-target="u3-page63" data-unit="unit-3" type="button">63</button><button class="page-btn" data-target="u3-page64" data-unit="unit-3" type="button">64</button><button class="page-btn" data-target="u3-page65" data-unit="unit-3" type="button">65</button><button class="page-btn" data-target="u3-page66" data-unit="unit-3" type="button">66</button><button class="page-btn" data-target="u3-page67" data-unit="unit-3" type="button">67</button><button class="page-btn" data-target="u3-page68" data-unit="unit-3" type="button">68</button><button class="page-btn" data-target="u4-page96" data-unit="unit-4" type="button">96</button><button class="page-btn" data-target="u4-page97" data-unit="unit-4" type="button">97</button><button class="page-btn" data-target="u4-page98" data-unit="unit-4" type="button">98</button><button class="page-btn" data-target="u4-page99" data-unit="unit-4" type="button">99</button><button class="page-btn" data-target="u4-page100" data-unit="unit-4" type="button">100</button><button class="page-btn" data-target="u4-page101" data-unit="unit-4" type="button">101</button><button class="page-btn" data-target="u4-page102" data-unit="unit-4" type="button">102</button><button class="page-btn" data-target="u4-page103" data-unit="unit-4" type="button">103</button><button class="page-btn" data-target="u4-page106" data-unit="unit-4" type="button">106</button><button class="page-btn" data-target="u4-page107" data-unit="unit-4" type="button">107</button><button class="page-btn" data-target="u4-page108" data-unit="unit-4" type="button">108</button><button class="page-btn" data-target="u4-page109" data-unit="unit-4" type="button">109</button><button class="page-btn" data-target="u4-page110" data-unit="unit-4" type="button">110</button><button class="page-btn" data-target="u4-page113" data-unit="unit-4" type="button">113</button><button class="page-btn" data-target="u4-page114" data-unit="unit-4" type="button">114</button><button class="page-btn" data-target="u4-page115" data-unit="unit-4" type="button">115</button><button class="page-btn" data-target="u4-page116" data-unit="unit-4" type="button">116</button><button class="page-btn" data-target="u4-page117" data-unit="unit-4" type="button">117</button><button class="page-btn" data-target="u4-page119" data-unit="unit-4" type="button">119</button><button class="page-btn" data-target="u4-page120" data-unit="unit-4" type="button">120</button><button class="page-btn" data-target="u4-page121" data-unit="unit-4" type="button">121</button><button class="page-btn" data-target="u4-page122" data-unit="unit-4" type="button">122</button><button class="page-btn" data-target="u4-page123" data-unit="unit-4" type="button">123</button><button class="page-btn" data-target="u4-page124" data-unit="unit-4" type="button">124</button><button class="page-btn" data-target="u4-page125" data-unit="unit-4" type="button">125</button></div>
+</nav>
+<div aria-live="polite" class="top-status" id="statusText">ترتيب الصفحات حسب أرقام صفحات الكتاب — من 4 إلى 125 — 76 صفحة/قسم</div>
+
+<noscript>
+<div class="no-js-note">
+        يلزم تفعيل JavaScript لاستخدام أزرار التنقل بين الصفحات.
+    </div>
+</noscript>
+
+<section class="unit-section" data-unit="1" id="unit-1">
+<div class="container">
+<h1>حل كتاب الأداءات والتقييمات - التاريخ الوطني</h1>
+<p style="text-align: center; color: #555; margin-bottom: 20px;">البكالوريا المصرية - الصف الثاني الثانوي - الجزء الأول</p>
+<h2>الوحدة الأولى: مصر بين الماضي والحاضر</h2>
+<!-- الدرس الأول -->
+<h3>الدرس الأول: بناء الدولة المصرية واستمرارها عبر التاريخ</h3>
+<!-- صفحة 4 -->
+
+<!-- صفحة 5 -->
+
+<!-- صفحة 6 -->
+
+<!-- صفحة 7 -->
+
+<!-- صفحة 7 (نموذج ب) -->
+
+<!-- صفحة 8 (نموذج ج) -->
+
+<!-- صفحة 8 (تابع) -->
+
+<!-- صفحة 9 -->
+
+<!-- صفحة 9 (تابع) -->
+
+<!-- صفحة 10 -->
+
+<!-- صفحة 11 (نموذج ب) -->
+
+<!-- صفحة 11 (نموذج ج) -->
+
+<!-- صفحة 12 -->
+
+</div>
+<div class="page-section" id="u1-page4">
+<div class="section-title">صفحة 4</div>
+<h4>الأداء الصفي</h4>
+<div class="qa-block">
+<div class="question">1- اختر بديلاً واحدًا صحيحًا: كل ما يأتي يُعد من أركان الدولة ما عدا ....</div>
+<div class="answer"><strong>الإجابة:</strong> د - الهوية القومية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما مدى اتفاقك أو اختلافك مع العبارة التالية؟ يرى أحد الطلاب أن الدفاع عن الوطن مسؤولية الجيش والشرطة وحدهما.</div>
+<div class="answer"><strong>الإجابة:</strong> أختلف. الدفاع عن الوطن مسؤولية جماعية يشترك فيها الشعب ومؤسسات الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- اشرح العبارة: لا يقتصر دور الشعب على الوجود العددي فحسب، بل يمتد ليشمل المشاركة الفاعلة في بناء الدولة وتنميتها وحمايتها.</div>
+<div class="answer"><strong>الإجابة:</strong> دور الشعب يشمل: المشاركة السياسية، الإسهام في التنمية الاقتصادية، الحفاظ على هوية المجتمع، والدفاع عن الوطن.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل تاريخياً: يمكن أن يلعب الشعب دور في تغيير الأوضاع السياسية للدولة.</div>
+<div class="answer"><strong>الإجابة:</strong> ثورة 23 يوليو 1952م، وثورة 1919م.</div>
+</div>
+<div class="page-number">صفحة 4</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page5">
+<div class="section-title">صفحة 5</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- اختر: جميع العبارات الآتية تعبر عن دور الشعب في الدولة، يخرج عنها ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إصدار الأحكام القضائية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- هل ينطبق عليها مفهوم "الدولة الحديثة"؟ إذا خضعت منطقة ما لإدارة تشكيل مسلح غير نظامي يفرض أحكامه بالقوة دون اعتراف خارجي أو قوانين منظمة.</div>
+<div class="answer"><strong>الإجابة:</strong> لا ينطبق. لغياب السلطة الشرعية وسيادة القانون.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أثبت صحة العبارة: الشعب هو المحرك الاقتصادي والأساس العمراني الذي تبنى به الحضارات.</div>
+<div class="answer"><strong>الإجابة:</strong> الشعب المصري هو الأساس الذي قامت عليه الحضارة المصرية القديمة من خلال العمل الجماعي والتنظيم.</div>
+</div>
+<div class="page-number">صفحة 5</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page6">
+<div class="section-title">صفحة 6</div>
+<h4>الأداء الصفي (الفترة الثانية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أي المواقف الآتية يمثل تطبيقًا مباشرًا لسيادة الدولة على الحيز الجغرافي؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - تنظيم دخول الطائرات إلى المجال الجوي بإذن رسمي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما مدى اتفاقك أو اختلافك: يمكن للطائرات دخول المجال الجوي لأي دولة دون تصريح رسمي منها.</div>
+<div class="answer"><strong>الإجابة:</strong> أختلف. لا يمكن لأي طائرة دخول المجال الجوي المصري دون تصريح رسمي.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أثبت بالأدلة: "يمثل الحيز الجغرافي أحد الأركان الأساسية لقيام الدولة" و "تُعد السلطة ركنًا أساسيًا لقيام الدولة واستقرارها".</div>
+<div class="answer"><strong>الإجابة:</strong> الحيز الجغرافي يشمل اليابس والمياه الإقليمية والمجال الجوي. السلطة تضع القوانين وتنفذها وتحافظ على الأمن العام.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- استنتج العلاقة بين: السيادة الداخلية والأمن والاستقرار.</div>
+<div class="answer"><strong>الإجابة:</strong> السيادة الداخلية هي الأساس لتحقيق الأمن والاستقرار داخل الدولة.</div>
+</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- لترسيم الحدود السياسية لمصر أهمية كبيرة، دلل.</div>
+<div class="answer"><strong>الإجابة:</strong> تم ترسيم الحدود الجنوبية مع السودان 1899م، والشرقية مع فلسطين 1906م، والغربية مع ليبيا 1925م.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- استنتج العلاقة بين: اختصاصات مجلس النواب واختصاصات الحكومة.</div>
+<div class="answer"><strong>الإجابة:</strong> علاقة تكامل ورقابة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- اختر: أيُّ مما يَأْتِي لا يُعد انتهاكاً لسيادة الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - تحليق طائرات شمال دائرة عرض 22 شمالاً دون تصريح من مصر.</div>
+</div>
+<div class="page-number">صفحة 6</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page7">
+<div class="section-title">صفحة 7</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أي القرارات الآتية يسهم بصورة مباشرة في تعزيز سيادة الدولة على حيزها الجغرافي؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - تطوير نظام مراقبة الملاحة الجوية والبحرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: جميع العبارات الآتية تعبر عن اختصاصات سلطات الدولة المصرية ويخرج عنها ...</div>
+<div class="answer"><strong>الإجابة:</strong> د - تتولى السلطة التنفيذية إصدار الأحكام القضائية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- في حال ضعفت مشاركة المواطنين في الحياة السياسية - قدم توقع واحد.</div>
+<div class="answer"><strong>الإجابة:</strong> ضعف الرقابة الشعبية على أداء الحكومة، وتفشي الفساد.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- "سيادة الدولة لا تقتصر على اليابس". ما مدى اتفاقك؟</div>
+<div class="answer"><strong>الإجابة:</strong> أتفق. الحيز الجغرافي يشمل المياه الإقليمية والمجال الجوي.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- "توجد علاقة بين حماية الدولة لقناة السويس وتحقيق استقرار وأمن الدولة". اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> حماية القناة تطبيق لسيادة الدولة، وهي شريان التجارة العالمية ومصدر مهم للدخل القومي.</div>
+</div>
+<div class="page-number">صفحة 7</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page7b">
+<div class="section-title">صفحة 7 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: جميع العبارات الآتية تعبر عن مفهوم السيادة يخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - اعتماد الدولة على التعاون مع جهات خارجية عند اتخاذ قراراتها.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- إذا فقدت دولة قدرتها على حماية مجالها الجوي وحدودها البحرية، فذلك يعني تهديد ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - السيادة على الحيز الجغرافي.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- "يمثل الحيز الجغرافي أحد الأركان الأساسية لقيام الدولة". أثبت.</div>
+<div class="answer"><strong>الإجابة:</strong> الحيز الجغرافي هو الرقعة المحددة التي تمارس الدولة سيادتها عليها.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- يسهم رئيس الجمهورية في الحفاظ على كيان الدولة، أثبت.</div>
+<div class="answer"><strong>الإجابة:</strong> رئيس الجمهورية يرعى مصالح الشعب ويحافظ على استقلال الوطن ووحدة أراضيه.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- قدم توقع: في حال تقاعست السلطة التشريعية عن أداء دورها.</div>
+<div class="answer"><strong>الإجابة:</strong> غياب الرقابة على أداء السلطة التنفيذية، وزيادة احتمالية الفساد الإداري.</div>
+</div>
+<div class="page-number">صفحة 7 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page8">
+<div class="section-title">صفحة 8 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: جميع العبارات الآتية تعكس مفهوم الحيز الجغرافي للدولة يخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - يتضمن وجود حدود سياسية غير معترف بها.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أي المواقف الآتية يُعبر بصورة أوضح عن ممارسة الشعب لدوره في دعم الدولة؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - الحفاظ على الهوية والدفاع عن الوطن.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- استنتج: أثر غياب السيادة على إدارة الدولة لشئونها.</div>
+<div class="answer"><strong>الإجابة:</strong> عدم قدرة الدولة على سن القوانين، والتبعية في إبرام المعاهدات، وفقدان السيطرة على مواردها.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- أثبتت صحة العبارة: "لا تقتصر السيادة على حماية حدود الدولة".</div>
+<div class="answer"><strong>الإجابة:</strong> السيادة نوعان: داخلية (سن القوانين وحفظ الأمن) وخارجية (إبرام المعاهدات والعلاقات الدبلوماسية).</div>
+</div>
+<div class="qa-block">
+<div class="question">5- استنتج أوجه الاختلاف بين: السيادة الداخلية والسيادة الخارجية.</div>
+<div class="answer"><strong>الإجابة:</strong> الداخلية تختص بالشئون الداخلية، والخارجية تختص بالعلاقات الدولية.</div>
+</div>
+<div class="page-number">صفحة 8 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page8b">
+<div class="section-title">صفحة 8 (تابع)</div>
+<h4>الأداء الصفي (الفترة الأولى: مقومات نشأة الدولة المصرية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: جميع العبارات الآتية تفسر أسباب نشأة الدولة المصرية ويخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> د - التوسع العسكري خارج حدود البلاد.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أيُّ المواقف الآتية يوضح العلاقة بين نهر النيل وقيام الدولة المصرية القديمة؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - الحاجة إلى تنظيم الري وتوزيع المياه فظهرت سلطة مركزية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- في حال عدم وجود نهر النيل في مصر: قدم توقع واحد.</div>
+<div class="answer"><strong>الإجابة:</strong> ستفقد مصر مصدرها الرئيسي للمياه العذبة والتربة الخصبة، ولن تقوم حضارة مستقرة.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- "كان الموقع الجغرافي أحد اهم عوامل نشأة الدولة المصرية واستمرارها". اثبت.</div>
+<div class="answer"><strong>الإجابة:</strong> وقوع مصر في قلب قارات العالم القديم جعلها مركزًا للتواصل الحضاري والتجاري، والحدود الطبيعية حمتها من الغزوات.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- استنتج العلاقة بين: الموقع الجغرافي والنشاط التجاري في مصر قديماً.</div>
+<div class="answer"><strong>الإجابة:</strong> الموقع جعل مصر حلقة وصل بين الشرق والغرب، ومركزًا لمرور القوافل التجارية.</div>
+</div>
+<div class="page-number">صفحة 8 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page9">
+<div class="section-title">صفحة 9</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- للموارد الطبيعية دور في دعم الدولة المصرية. اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> الموارد الطبيعية شملت الأراضي الخصبة والمعادن وأحجار البناء، وأسهمت في تنشيط الزراعة والصناعة والتجارة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- للحدود الطبيعية دور في حماية الدولة المصرية عبر التاريخ. ما مدى اتفاقك؟</div>
+<div class="answer"><strong>الإجابة:</strong> أتفق. الحدود الطبيعية حمتها من الغزوات وأتاحت لها الاستقرار.</div>
+</div>
+<div class="page-number">صفحة 9</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page9b">
+<div class="section-title">صفحة 9 (تابع)</div>
+<h4>الأداء الصفي (الفترة الثانية: التجانس البشري والوحدة الوطنية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: كل مما يلي يعد من إجراءات الدولة للحفاظ على الهوية المصرية ويخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - حماية المصالح الوطنية، وتمثيل الدولة في المنظمات الدولية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- تسم العلاقة بين الحفاظ على الهوية المصرية واستمرار الدولة عبر الزمن بكونها علاقة طردية، دلل.</div>
+<div class="answer"><strong>الإجابة:</strong> زيادة الحفاظ على الهوية يؤدي إلى زيادة استمرار الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما النتائج التي ترتبت على: قيام حكومة مركزية قوية بعد توحيد القطرين عام 3200 ق.م؟</div>
+<div class="answer"><strong>الإجابة:</strong> كان الأساس الحقيقي لظهور الدولة المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- بم تفسر: يمكن وصف العلاقة بين التجانس البشري والوحدة الوطنية بأنها علاقة سبب ونتيجة.</div>
+<div class="answer"><strong>الإجابة:</strong> التجانس البشري هو السبب، والوحدة الوطنية هي النتيجة.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ما العلاقة بين: الحكومة المركزية والدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> الحكومة المركزية هي الأساس الحقيقي لظهور الدولة المصرية.</div>
+</div>
+<div class="page-number">صفحة 9 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page10">
+<div class="section-title">صفحة 10</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- إذا تعرض مجتمع يتميز بتجانس ثقافي لاحتلال أجنبي، فما السلوك المتوقع؟</div>
+<div class="answer"><strong>الإجابة:</strong> سيقاوم الاحتلال ويتمسك بهويته الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أيُّ الرأيين الآتيين تؤيد: الحكومة المركزية هي العامل الأهم في قيام الدولة المصرية، أم التجانس البشري والوحدة الوطنية هو العامل الأهم في استمرار الدولة؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: إذا ضعف التجانس الثقافي داخل المجتمع، فأي النتائج الآتية تصبح أكثر احتمالًا؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - تراجع التماسك الاجتماعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: إذا توقفت الدولة عن تعريف الأجيال المختلفة بتاريخ مصر وحضارتها، فأي النتائج التالية تصبح أكثر احتمالاً؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - ضعف الوعي بالهوية الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- مثل الجيش المصري أحد مقومات استمرار الدولة، أثبت.</div>
+<div class="answer"><strong>الإجابة:</strong> الجيش يحمي حدود الدولة ويصون إنجازاتها الحضارية ويضمن استقرارها السياسي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ما النتائج التي ترتبت على: تجانس الشعب المصري ثقافيًا منذ فجر التاريخ؟</div>
+<div class="answer"><strong>الإجابة:</strong> تكوين اتحاد متماسك، وجعل الوحدة السياسية أمرًا طبيعيًا، والحفاظ على الهوية المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- أي الرأيين تؤيد: تجانس الشعب هو أساس قوة الدولة، أم الموقع الجغرافي هو أساس قوة الدولة؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الأول.</div>
+</div>
+<div class="page-number">صفحة 10</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page11">
+<div class="section-title">صفحة 11 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: أي المواقف الآتية يعكس أثر التجانس البشري في قوة الدولة؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - احتفاظ المجتمع بهويته.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أي المواقف التالية يمثل تطبيقًا عمليًا لفكرة أن "التنمية خط دفاع أساسي عن الدولة"؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - استثمار الموارد الطبيعية والبشرية في إقامة مشروعات إنتاجية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- "لم يكن نهر النيل مجرد مصدر للمياه"، دلل.</div>
+<div class="answer"><strong>الإجابة:</strong> كان أساسًا لقيام الحضارة، وشريان اتصال، وموردًا اقتصاديًا.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ما النتائج التي ترتبت على: وقوع مصر في قلب العالم القديم؟</div>
+<div class="answer"><strong>الإجابة:</strong> جعلها مركزًا للتواصل الحضاري والتبادل التجاري، وحلقة وصل بين الشرق والغرب.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ما العلاقة بين: الموقع الجغرافي والدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> الموقع كان أحد أهم عوامل نشأة الدولة المصرية واستمرارها.</div>
+</div>
+<div class="page-number">صفحة 11 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page11b">
+<div class="section-title">صفحة 11 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: أيُّ المواقف الآتية يفسر لماذا كان قيام الحكومة المركزية نقطة تحول في تاريخ الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - لأنها أسهمت في توحيد إدارة الأقاليم تحت سلطة واحدة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أيُّ السياسات الآتية تُجسد التكامل بين القوة الناعمة والقدرات الدفاعية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - دعم المؤسسات الثقافية وتطوير القوات المسلحة لحماية الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- فسر أهمية الجيش بالنسبة للدولة.</div>
+<div class="answer"><strong>الإجابة:</strong> الجيش هو الأداة التي تحمي حدود الدولة وتصون إنجازاتها الحضارية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- أيُّ الرأيين تؤيد: الموقع الجغرافي أم نهر النيل هو أهم عوامل نشأة الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- أسهمت الموارد الطبيعية في ازدهار الدولة المصرية، دلل.</div>
+<div class="answer"><strong>الإجابة:</strong> أسهمت في تنشيط الزراعة والصناعة والتجارة، وتوفير مقومات الاستقرار الاقتصادي.</div>
+</div>
+<div class="page-number">صفحة 11 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u1-page12">
+<div class="section-title">صفحة 12</div>
+<h4>التدريب الشهري</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أيُّ العوامل التالية يُعد العامل الأهم في قيام الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - نهر النيل.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: أيُّ العوامل التالية يُعد العامل الأهم في استمرار الدولة المصرية عبر التاريخ؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - التجانس البشري والوحدة الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- اختر: أيُّ العوامل التالية يُعد من مقومات نشأة الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - الموقع الجغرافي والموارد الطبيعية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- اختر: أيُّ العوامل التالية يُعد من إجراءات الحفاظ على الهوية المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - حماية التراث الحضاري والاحتفال بالمناسبات الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- اختر: أيُّ العوامل التالية يُعد من مقومات استمرار الدولة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> د - القوة العسكرية.</div>
+</div>
+<div class="page-number">صفحة 12</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div></section><section class="unit-section" data-unit="2" id="unit-2">
+<div class="container">
+<h1>حل كتاب الأداءات والتقييمات - التاريخ الوطني</h1>
+<p style="text-align: center; color: #555; margin-bottom: 20px;">البكالوريا المصرية - الصف الثاني الثانوي - الجزء الأول</p>
+<h2>الوحدة الثانية: تحولات القوة وبناء الوعي بمصر في العصر الحديث والمعاصر</h2>
+<!-- الدرس الأول -->
+<h3>الدرس الأول: سياسات الاحتلال بمصر في العصر الحديث</h3>
+<!-- صفحة 35 -->
+
+<!-- صفحة 36 -->
+
+<!-- صفحة 36 (تابع) -->
+
+<!-- صفحة 37 -->
+
+<!-- صفحة 38 (نموذج ب) -->
+
+<!-- صفحة 39 (نموذج ج) -->
+
+<!-- صفحة 40 -->
+
+<!-- صفحة 41 -->
+
+<!-- صفحة 42 -->
+
+<!-- صفحة 43 -->
+
+<!-- الدرس الثاني -->
+<h3>الدرس الثاني: صمود الشعب المصري ومقاومة الاحتلال</h3>
+<!-- صفحة 45 -->
+
+<!-- صفحة 46 -->
+
+<!-- صفحة 46 (تابع) -->
+
+<!-- صفحة 47 -->
+
+<!-- صفحة 47 (تابع) -->
+
+<!-- صفحة 48 (نموذج ب) -->
+
+<!-- صفحة 49 (نموذج ج) -->
+
+<!-- الدرس الثالث -->
+<h3>الدرس الثالث: ثورة 23 يوليو 1952 والتحولات الكبرى في مصر</h3>
+<!-- صفحة 50 -->
+
+<!-- صفحة 50 (تابع) -->
+
+<!-- صفحة 51 -->
+
+<!-- صفحة 51 (تابع) -->
+
+<!-- صفحة 52 -->
+
+<!-- صفحة 52 (نموذج ب) -->
+
+<!-- صفحة 53 (نموذج ج) -->
+
+<!-- الدرس الرابع -->
+<h3>الدرس الرابع: الهوية الوطنية في مواجهة الاستعمار الجديد</h3>
+<!-- صفحة 56 -->
+
+<!-- صفحة 57 -->
+
+<!-- صفحة 57 (نموذج ب) -->
+
+<!-- صفحة 58 (نموذج ج) -->
+
+<!-- صفحة 59 -->
+
+</div>
+<div class="page-section" id="u2-page35">
+<div class="section-title">صفحة 35</div>
+<h4>الأداء الصفي (الفترة الأولى: سياسات فرنسا في مصر)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: جاء بتقييم آثار الحملة الفرنسية "ويعد هذا الأمر أجل نتائج الحملة الفرنسية وأبعدها أثرًا أنار للعالم ناحية أطبق عليها الظلام...". جاء هذا الكلام في إطار الحديث عن ...</div>
+<div class="answer"><strong>الإجابة:</strong> ج - كشف حجر رشيد وفك رموزه.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- دلل على صحة العبارة: "سعت القيادة الفرنسية للحملة (نابليون) إلى إعطاء الانطباع بأنها جاءت للإصلاح لا للاحتلال".</div>
+<div class="answer"><strong>الإجابة:</strong> إصدار منشورات تحترم الإسلام، والتقرب من العلماء والمشايخ، وإنشاء المجمع العلمي، وإنشاء دواوين محلية لإشراك الأعيان في الإدارة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما النتائج التي ترتبت على: دراسة الحملة الفرنسية لمصر دراسة علمية شاملة واصطحاب نابليون لعدد كبير من العلماء؟</div>
+<div class="answer"><strong>الإجابة:</strong> إصدار موسوعة "وصف مصر" التي قدمت وصفًا دقيقًا لطبيعة مصر وثرواتها وسكانها وآثارها، وأسهمت في تعريف أوروبا بمكانة مصر الحضارية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- أي الرأيين التاليين تؤيد: تمثلت آثار الحملة الفرنسية في العدوان والاحتلال العسكري، أم كان لها آثار عميقة وطويلة المدى أثرت في الحياة العلمية والثقافية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="page-number">صفحة 35</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page36">
+<div class="section-title">صفحة 36</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- ما العلاقة بين: مقاومة المصريين الشعبية للحملة الفرنسية وسياسة قادة الحملة؟</div>
+<div class="answer"><strong>الإجابة:</strong> كلما زادت المقاومة الشعبية، زادت سياسة القمع والضرائب من قادة الحملة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أثبت صحة أو خطأ: "اقتصرت سياسة الحملة الفرنسية في مصر على الجانب العسكري القمعي".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. جمعت بين سياسة التقرب (المنشورات، العلماء، الدواوين) وسياسة القمع (قمع الثورات، الضرائب).</div>
+</div>
+<div class="page-number">صفحة 36</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page36b">
+<div class="section-title">صفحة 36 (تابع)</div>
+<h4>الأداء الصفي (الفترة الثانية: التدخل الأجنبي في شئون مصر)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أي من شروط معاهدة لندن 1840م سعت السلطان وأوروبا من خلالها لتحجيم وضع مصر دوليًا؟</div>
+<div class="answer"><strong>الإجابة:</strong> د - فرض القيود على الجيش المصري.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ماذا كان يحدث إذا: لم تُعقد اتفاقية بلطة ليمان التجارية عام 1838م بين بريطانيا والدولة العثمانية؟</div>
+<div class="answer"><strong>الإجابة:</strong> لكان مشروع محمد علي الصناعي استمر، ولما تراجعت الصناعة الوطنية المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أي الرأيين التاليين تؤيد: مع تزايد قوة محمد علي حظى بدعم داخلي وخارجي، أم استشعرت القوى الأوروبية خطورة توسعاته في الشرق؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="page-number">صفحة 36 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page37">
+<div class="section-title">صفحة 37</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: كل الشواهد التالية تثبت أن للتدخل الأجنبي أثر في السيادة المصرية ويخرج عنها.</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تشكيل حكومة وطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: استنادًا إلى أهداف الحملة الفرنسية ووثائقها، أيُّ الممارسات التالية تكشف التناقض بين الخطاب المعلن لنابليون وسياسة الحملة على أرض الواقع؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إعلان حماية الدين الإسلامي ومحاربة طغيان المماليك.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أي الرأيين تؤيد: نظام المراقبة المالية الثنائية وصندوق الدين كانا طوق نجاة للاقتصاد المصري، أم احتلالًا اقتصاديًا لمصر؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل: "لم تسر السياسة التي اتبعتها الحملة الفرنسية في التعامل مع المصريين على وتيرة واحدة".</div>
+<div class="answer"><strong>الإجابة:</strong> اتبعت سياسة التقرب في البداية، ثم سياسة القمع بعد المقاومة الشعبية.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ماذا يحدث إذا: اقتصرت المشروعات التنموية للخديو إسماعيل على الموارد المحلية دون الاقتراض من البنوك الأوروبية؟</div>
+<div class="answer"><strong>الإجابة:</strong> لما تراكمت الديون، ولما فرضت الرقابة المالية الأجنبية، ولما حدث الاحتلال البريطاني.</div>
+</div>
+<div class="page-number">صفحة 37</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page38">
+<div class="section-title">صفحة 38 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: يستنتج من أسلوب بريطانيا في السيطرة على مصر عقب الاحتلال عام 1882م أن هدفها كان:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الإبقاء على مظاهر الحكم المصري شكلياً مع الاستحواذ الفعلي على السلطة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: كان لتشكيل اللجان المالية الأوروبية في مصر عدة آثار سلبية على استقلال القرار الاقتصادي، أيُّ الآثار التالية لا يندرج ضمنها؟</div>
+<div class="answer"><strong>الإجابة:</strong> د - تعزيز استقلال الدولة في إدارة مواردها المالية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أيُّ الرأيين تؤيد: كانت سياسة نابليون إصلاحية وتنويرية حقيقية، أم ذات طابع استعماري نفعي اتسم بالازدواجية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل: "لم تعتمد بريطانيا في السيطرة على مصر على القوة العسكرية فقط بل استخدمت وسائل سياسية واقتصادية".</div>
+<div class="answer"><strong>الإجابة:</strong> استخدمت الرقابة المالية، صندوق الدين، السيطرة على قناة السويس، التدخل في تشكيل الحكومة، فرض مستشارين بريطانيين.</div>
+</div>
+<div class="page-number">صفحة 38 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page39">
+<div class="section-title">صفحة 39 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: كانت السيطرة البريطانية على البنوك والخدمات في مصر تهدف بالأساس إلى:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - ضمان تبعية الاقتصاد المصري للرأسمالية الأوروبية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: "أسهمت الأوضاع الثقافية في مصر في ولادة ضمير وطني مستنير رافض للتبعية" يخرج عن عوامل ازدهار الحياة الفكرية ...</div>
+<div class="answer"><strong>الإجابة:</strong> د - امتلاك المصريين القدرة الاقتصادية لطلب العلم.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أيِّد: "نظام الاحتكار في عهد محمد علي كان درعًا لحماية الاقتصاد الناشئ".</div>
+<div class="answer"><strong>الإجابة:</strong> أنشأ مصانع للأسلحة والغزل والنسيج، ووفر لها الحماية الجمركية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- قارن بين: تيار الحركة الوطنية المصرية والتيار الليبرالي.</div>
+<div class="answer"><strong>الإجابة:</strong> الليبرالي ركز على الحريات الفردية والدستور، والحركة الوطنية ركزت على الاستقلال وإنهاء الاحتلال.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ماذا كان يحدث إذا: لم تتراكم ديون مصر بسبب مشروعات التحديث؟</div>
+<div class="answer"><strong>الإجابة:</strong> لما فرضت الرقابة المالية الأجنبية، ولما حدث الاحتلال البريطاني.</div>
+</div>
+<div class="page-number">صفحة 39 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page40">
+<div class="section-title">صفحة 40</div>
+<h4>الأداء الصفي (الفترة الأولى: تابع التدخل الأجنبي - المراقبة المالية الثانية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: عقب تفاقم أزمة الديون في مصر سعت الدول الدائنة للتدخل في الشئون الداخلية وأصبحوا أصحاب سلطة كبيرة في البلاد. نتج عن هذا التدخل:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - فقدان الدولة المصرية لسيادتها المالية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- وضع رأيك مع التبرير في إنشاء كل من: "صندوق الدين" و"المراقبة المالية الثانية" في مصر.</div>
+<div class="answer"><strong>الإجابة:</strong> أدت إلى سيطرة الأوروبيين على موارد الدولة، وتوجيه الإنفاق لسداد الديون، وتقييد حرية الحكومة المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- دلل على صحة العبارة: تعددت صور التدخل الأجنبي في شئون مصر.</div>
+<div class="answer"><strong>الإجابة:</strong> تدخل مالي (صندوق الدين، الرقابة المالية)، سياسي (الوزارة المختلطة، المستشارون)، عسكري (الاحتلال البريطاني 1882م).</div>
+</div>
+<div class="qa-block">
+<div class="question">4- الثورة العرابية والاحتلال البريطاني لمصر.</div>
+<div class="answer"><strong>الإجابة:</strong> الثورة العرابية عبرت عن رفض التدخل الأجنبي، فاعتبرتها بريطانيا تهديدًا لمصالحها، فاحتلت مصر عام 1882م.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- أثبت صحة أو خطأ: "اتبعت القوى الأوروبية سياسة تدريجية للتدخل في شئون مصر".</div>
+<div class="answer"><strong>الإجابة:</strong> صحيح. بدأت بالتدخل المالي، ثم السياسي، ثم العسكري.</div>
+</div>
+<div class="page-number">صفحة 40</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page41">
+<div class="section-title">صفحة 41</div>
+<h4>الأداء الصفي (الفترة الثانية: سياسات الاحتلال البريطاني في مصر 1882-1914)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: عقب الاحتلال أدركت بريطانيا أن وجود جيش وطني يمثل تهديد لوجودها في البلاد فاتخذت عدة إجراءات لضمان سيطرتها على القوة العسكرية يستثنى منها:</div>
+<div class="answer"><strong>الإجابة:</strong> د - إرساله لتنفيذ مهام خارج الحدود.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- دلل: أبقت بريطانيا على المؤسسات المصرية ولكن كان لها اليد العليا في تصريف شئون الحكومة.</div>
+<div class="answer"><strong>الإجابة:</strong> أبقيت على الخديو شكليًا، لكن السلطة الفعلية كانت في يد المعتمد البريطاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- قارن بين موقف كل من: محمد علي والاحتلال البريطاني من القوة العسكرية بمصر.</div>
+<div class="answer"><strong>الإجابة:</strong> محمد علي بنى جيشًا وطنيًا قويًا، والاحتلال البريطاني عمل على تفكيك القوة العسكرية وإضعافها.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- لو كنت مسؤول عن التعليم في فترة الاحتلال البريطاني لمصر ما الإجراءات التي كنت ستتخذها للتصدي للسياسة التعليمية للاحتلال؟</div>
+<div class="answer"><strong>الإجابة:</strong> نشر التعليم الوطني، وتوعية الأجيال بتاريخ مصر وحضارتها، وإعداد مواطنين واعين لا موظفين منفذين.</div>
+</div>
+<div class="page-number">صفحة 41</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page42">
+<div class="section-title">صفحة 42</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- سعت بريطانيا لإضعاف القوة العسكرية المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> لتضمن عدم وجود قوة قادرة على مقاومة الاحتلال.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: يظهر التناقض بين السياسات الاقتصادية لمحمد علي وسياسات الاحتلال البريطاني في أن:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - انتهج محمد علي لبناء اقتصاد مصري مستقل، بينما انتهج الاحتلال لربط مصر بالاقتصاد البريطاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أي السياسات الآتية كانت مدخلًا للتدخل السياسي الأوروبي؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الرقابة المالية الثنائية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ناقش: "بدأ التدخل الأوروبي في مصر بأدوات غير عسكرية، ثم تطور إلى سيطرة مباشرة".</div>
+<div class="answer"><strong>الإجابة:</strong> بدأ بالتدخل المالي والاقتصادي، ثم السياسي، ثم العسكري.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ماذا يحدث إذا: ركزت سياسة بريطانيا التعليمية في مصر على بناء مواطنين واعين بدلًا من إعداد موظفين للإدارة؟</div>
+<div class="answer"><strong>الإجابة:</strong> لزاد الوعي الوطني، ولتسارعت حركة المقاومة ضد الاحتلال.</div>
+</div>
+<div class="page-number">صفحة 42</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page43">
+<div class="section-title">صفحة 43</div>
+<h4>التقييم الأسبوعي (نموذج ب)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يمكن استنتاج أن الدافع الحقيقي غير المعلن للتدخل العسكري البريطاني عام 1882م، وضرب الثورة العرابية هو:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - حماية المصالح البريطانية الاستراتيجية والاقتصادية في مصر.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: يمكن تفسير حرص الاحتلال البريطاني على تفكيك القوة العسكرية المصرية بأنه استهدف:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إضعاف قدرة الدولة على حماية سيادتها.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أي الرأيين تؤيد: سياسة التعليم في عهد الاحتلال ساهمت في تطوير الإدارة الحكومية، أم كانت سياسة تجهيل واستعباد إداري؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- بم تفسر: تحولت الأزمة المالية في مصر في عصر خلفاء محمد علي إلى مدخل للتدخل الأوروبي؟</div>
+<div class="answer"><strong>الإجابة:</strong> بسبب تراكم الديون، مما أدى إلى فرض الرقابة المالية الأجنبية.</div>
+</div>
+<div class="page-number">صفحة 43</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page45">
+<div class="section-title">صفحة 45</div>
+<h4>الأداء الصفي (الفترة الأولى: الحملة الفرنسية وبداية تشكيل الوعي المصري)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: "وقد اعتبرت الحملة الفرنسية بصف النظر عن وجهها العسكري صدمة حضارية وثقافية" نستنتج أي من الآتي؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - إن مصر كانت تعيش في عزلة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما النتائج التي ترتبت على: اصطدام علماء الأزهر بمبدئية الأوروبيين المتفوقة علميًا وإداريًا أثناء الحملة الفرنسية؟</div>
+<div class="answer"><strong>الإجابة:</strong> بلورة حالة من "التأمل النقدي" لأوضاع البلاد، وإدخال المطابع والتجارب الإدارية الأولى.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- دلل: "مثل مشروع محمد علي مرحلة مهمة في تطور الوعي المصري".</div>
+<div class="answer"><strong>الإجابة:</strong> حاول بناء دولة حديثة قوية تعتمد على جيش وطني منظم، واقتصاد متطور، وتعليم حديث.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- أي الرأي تؤيد: كانت الحملة الفرنسية مجرد احتلال عسكري استغلالي، أم أحدثت صدمة حضارية أيقظت وعي المجتمع المصري؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- حدد صحة أو خطأ: "اختلف كل من محمد عبده وجمال الدين الأفغاني في منطلقاتهم الفكرية".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. اتفقا على أهمية إصلاح الفكر الديني والنهضة.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- ما العلاقة بين: ثوابت المجتمع المصري ومنهج رفاعة الطهطاوي في التعامل مع الأفكار الأوروبية؟</div>
+<div class="answer"><strong>الإجابة:</strong> نجح في الربط بين التحديث والتراث، وحلل الأفكار الأوروبية وانتقى منها ما يناسب قيم المجتمع المصري.</div>
+</div>
+<div class="page-number">صفحة 45</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page46">
+<div class="section-title">صفحة 46</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- فسر: حدث تحول جذري في نظرة المصريين لذواتهم ووعيهم القومي إبان الحملة الفرنسية.</div>
+<div class="answer"><strong>الإجابة:</strong> الاحتكاك بالحضارة الأوروبية جعلهم يدركون الفجوة الحضارية، ويدفعهم للتفكير في أسباب التقدم الأوروبي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- دلل: كان لرفاعة الطهطاوي دور مؤسسي بارز في نقل العلوم الحديثة لمصر.</div>
+<div class="answer"><strong>الإجابة:</strong> أسس مدرسة الألسن ونشط حركة الترجمة، مما أسهم في نقل العلوم الحديثة.</div>
+</div>
+<div class="page-number">صفحة 46</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page46b">
+<div class="section-title">صفحة 46 (تابع)</div>
+<h4>الأداء الصفي (الفترة الثانية: الثورة العرابية - مصطفى كامل ومحمد فريد - ثورة 1919)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يظهر وجه التشابه بين كل من مصطفى كامل ومحمد فريد في قيادة الحركة الوطنية ضد الاحتلال البريطاني في السعي لـ ...</div>
+<div class="answer"><strong>الإجابة:</strong> د - التوجه لتقوية الجيش المصري ودعمه.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- بم تفسر: حملت الثورة العرابية شعار "مصر للمصريين"؟</div>
+<div class="answer"><strong>الإجابة:</strong> للتأكيد على حق الشعب في حكم نفسه، ورفض التدخل الأجنبي.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- وضح رأيك: مثل مصطفى كامل نقطة تحول في تاريخ الحركة الوطنية بمصر.</div>
+<div class="answer"><strong>الإجابة:</strong> أسس جريدة اللواء لنشر خطبه ومقالاته، واستغل حادثة دنشواي، وأنشأ الحزب الوطني، ودعا لإنشاء الجامعة المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل: دخلت الحركة الوطنية مع محمد فريد مرحلة أكثر نضجًا.</div>
+<div class="answer"><strong>الإجابة:</strong> وسع قاعدة المشاركة الشعبية، واهتم بتأسيس نقابات عمالية، ورفض فكرة مد امتياز قناة السويس، ودعا لمجانية التعليم.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- أثبت: دت ثورة 1919 أعمق معاني الوحدة الوطنية بين أبناء الشعب المصري.</div>
+<div class="answer"><strong>الإجابة:</strong> ظهرت في مشهد الهلال مع الصليب، وتجسدت أعمق معاني الوحدة الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- دلل: كان مشاركة المرأة المصرية في ثورة 1919م انعكاسًا للتحول الجذري الذي حدث في الوعي السياسي المصري.</div>
+<div class="answer"><strong>الإجابة:</strong> دعمت النضال الشعبي، وشاركت في العمل الوطني.</div>
+</div>
+<div class="page-number">صفحة 46 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page47">
+<div class="section-title">صفحة 47</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- دلل: ساهمت الثورة العرابية في إعادة تشكيل الوعي السياسي المصري.</div>
+<div class="answer"><strong>الإجابة:</strong> رسخت فكرة المقاومة، ومهدت للحركة الوطنية، ودعمت فكرة المشاركة السياسية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما العلاقة بين: الثورة العرابية ومفهوم السيادة الوطنية؟</div>
+<div class="answer"><strong>الإجابة:</strong> الثورة العرابية أكدت على حق الشعب في حكم نفسه، وهو جوهر السيادة الوطنية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- قارن بين: مصطفى كامل ومحمد فريد من حيث دور كل منهما في تشكيل الوعي المصري.</div>
+<div class="answer"><strong>الإجابة:</strong> مصطفى كامل ركز على الصحافة والتنديد بالاحتلال، ومحمد فريد وسع قاعدة المشاركة الشعبية واهتم بالنقابات العمالية.</div>
+</div>
+<div class="page-number">صفحة 47</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page47b">
+<div class="section-title">صفحة 47 (تابع)</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: كل من الأفكار الإصلاحية التالية تنسب لمحمد فريد ويخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تدعيم فكرة مد امتياز قناة السويس.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: تكمن القيمة الجوهرية لمفهوم "المشاركة السياسية" كما حددتها الثورة العرابية في كونها ترتكز على:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - إشراك المواطنين في صنع القرار وإدارة شؤون الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أثبت صحة أو خطأ: "كان أقطاب النهضة الفكرية في مصر متطابقين تمامًا في منطلقاتهم الفكرية".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. اختلفوا في المنطلقات لكن اتفقوا على أهمية النهضة.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- بم تفسر: اعتبار مشاركة المرأة المصرية في ثورة 1919م تحولًا جذريًا في الوعي السياسي؟</div>
+<div class="answer"><strong>الإجابة:</strong> لأنها خرجت من دائرة المنزل إلى العمل الوطني العام.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- قارن بين دور مصطفى كامل ومحمد فريد في دعم الحركة الوطنية.</div>
+<div class="answer"><strong>الإجابة:</strong> مصطفى كامل ركز على الصحافة والتنديد، ومحمد فريد وسع المشاركة الشعبية والنقابات.</div>
+</div>
+<div class="page-number">صفحة 47 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page48">
+<div class="section-title">صفحة 48 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: ترتب على صدور تصريح 28 فبراير 1922م كل النتائج التالية ويخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - تطور النضال الشعبي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: يرجع اندلاع الثورة العرابية إلى تفاعل عدد من العوامل السياسية والاقتصادية، من أبرزها:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - التمييز داخل الجيش، وتزايد التدخل الأجنبي في الاقتصاد المصري.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- دلل: "كان للاحتكاك الحضاري في عهد محمد علي أثر في ظهور شخصيات نجحت في الربط بين التحديث والتراث".</div>
+<div class="answer"><strong>الإجابة:</strong> رفاعة الطهطاوي، وجمال الدين الأفغاني، ومحمد عبده.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ما النتائج التي ترتبت على: استغلال مصطفى كامل لحادثة دنشواي؟</div>
+<div class="answer"><strong>الإجابة:</strong> كسب التعاطف الخارجي، وفضح سياسات الاحتلال.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- قارن بين: دور هدى شعراوي ودور صفية زغلول في تاريخ الحركة الوطنية.</div>
+<div class="answer"><strong>الإجابة:</strong> صفية زغلول دعمت النضال الشعبي، وهدى شعراوي شاركت في العمل الوطني.</div>
+</div>
+<div class="page-number">صفحة 48 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page49">
+<div class="section-title">صفحة 49 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: اتفق كل من مصطفى كامل ومحمد فريد في نضالهما ضد الاحتلال البريطاني فاستخدما:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الإعلام والعمل الشعبي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: ارتبط الدور النضالي البارز لصفية زغلول في تاريخ مصر الحديث ارتباطًا وثيقًا بـ:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - ثورة 1919م والحركة الوطنية المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أثبت: "تنوعت أساليب مقاومة المصريين للاحتلال في الربع الأول من القرن العشرين".</div>
+<div class="answer"><strong>الإجابة:</strong> المقاومة المسلحة، والعمل السياسي والتنظيمي، والمظاهرات الشعبية، والمقاطعة الاقتصادية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- قارن بين: وعي المجتمع المصري قبل مشروع محمد علي وبعده.</div>
+<div class="answer"><strong>الإجابة:</strong> قبل المشروع كان الوعي تقليديًا، وبعده بدأ الوعي بالتحديث والانفتاح على الحضارة الأوروبية.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ما النتائج التي ترتبت على: إدراك سعد زغلول بأن الاستقلال قضية أمة بأكملها؟</div>
+<div class="answer"><strong>الإجابة:</strong> تحولت الحركة الوطنية إلى حركة شعبية شاملة.</div>
+</div>
+<div class="page-number">صفحة 49 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page50">
+<div class="section-title">صفحة 50</div>
+<h4>الأداء الصفي (الفترة الأولى: عوامل قيام ثورة 23 يوليو 1952)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: الصورة المقابلة في 25 يناير 1952 لمحاصرة قوات الاحتلال البريطاني لقسم شرطة الإسماعيلية والتي سطرت فيها مصر ملحمة وطنية. جاء هذا الحصار البريطاني نتيجة:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - دعم رجال الشرطة لحركة المقاومة بالقناة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما النتائج التي ترتبت على: هيمنة القصر الملكي والاحتلال البريطاني على الحياة الدستورية منذ عام 1923م؟</div>
+<div class="answer"><strong>الإجابة:</strong> تفككت الحياة الحزبية، وفشلت المفاوضات مع بريطانيا، وفقد الشعب ثقته في النظام.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما العلاقة بين: تزوير الانتخابات وتجاهل الدستور قبل عام 1952م وبين ثقة الشعب في النظام القائم؟</div>
+<div class="answer"><strong>الإجابة:</strong> علاقة عكسية: كلما زاد التزوير وتجاهل الدستور، قلت ثقة الشعب في النظام.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- كيف يتحول "التمهيش الاجتماعي" إلى "توتر سياسي" يهدد الدولة؟</div>
+<div class="answer"><strong>الإجابة:</strong> عندما يشعر المواطنون بالتهميش وغياب العدالة الاجتماعية، يتحول غضبهم إلى احتجاجات واضطرابات تهدد استقرار الدولة.</div>
+</div>
+<div class="page-number">صفحة 50</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page50b">
+<div class="section-title">صفحة 50 (تابع)</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- ما النتائج التي ترتبت على: تركز الثروة في يد "نصف في المئة" من السكان قبل ثورة 23 يوليو 1952؟</div>
+<div class="answer"><strong>الإجابة:</strong> زيادة الفجوة الطبقية، وظهور طبقة فقيرة مهمشة، وزيادة الغضب الشعبي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أثبت صحة أو خطأ: "كان فشل النظام السياسي قبل ثورة 1952 ناتجًا عن غياب المؤسسات الدستورية".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. كان فشل النظام ناتجًا عن عجز المؤسسات عن أداء مهامها الفعلية.</div>
+</div>
+<div class="page-number">صفحة 50 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page51">
+<div class="section-title">صفحة 51</div>
+<h4>الأداء الصفي (الفترة الثانية: مقدمات الثورة - نتائج ثورة 23 يوليو)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: اتجهت حكومة ثورة يوليو لتأميم شركة قناة السويس عام 1956م كرد مباشر على:</div>
+<div class="answer"><strong>الإجابة:</strong> د - تعرض مصر لخطر العدوان الثلاثي على قناة السويس.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما النتائج التي ترتبت على: قرار الملك فاروق برفض نتيجة انتخابات نادي الضباط وحل مجلس إدارة النادي في ديسمبر 1951م؟</div>
+<div class="answer"><strong>الإجابة:</strong> دفع الضباط الأحرار للتفكير في القيام بالثورة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- "أحداث 25 يناير بالإسماعيلية" و"حريق القاهرة في 26 يناير 1952م".</div>
+<div class="answer"><strong>الإجابة:</strong> حريق القاهرة كان المرحلة الفاصلة لسقوط النظام الملكي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل: جاء تنازل الملك فاروق عن العرش معبرًا عن خضوع الإرادة الملكية لإرادة الشعب.</div>
+<div class="answer"><strong>الإجابة:</strong> اضطر للتنازل تحت ضغط الشعب والضباط الأحرار.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- دلل: ثورة 23 يوليو 1952م نقطة تحول في تاريخ مصر المعاصر.</div>
+<div class="answer"><strong>الإجابة:</strong> أنهت النظام الملكي، وأقامت نظامًا جمهوريًا، وحققت الجلاء والاستقلال.</div>
+</div>
+<div class="page-number">صفحة 51</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page51b">
+<div class="section-title">صفحة 51 (تابع)</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- "النجاح لا يعتمد على امتلاك القوة فقط، بل على إدارة اللحظة والتناغم مع هدف الجماعة". كيف تطبق هذه القاعدة عند قيادة مشروع أو فريق عمل حديث؟</div>
+<div class="answer"><strong>الإجابة:</strong> التخطيط الجيد، واختيار التوقيت المناسب، وتوحيد الجهود حول هدف مشترك.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- مثل حريق القاهرة مرحلة فاصلة لسقوط النظام الملكي، دلل.</div>
+<div class="answer"><strong>الإجابة:</strong> كشف عجز الأجهزة الأمنية عن احتواء الموقف، وأظهر هشاشة النظام.</div>
+</div>
+<div class="page-number">صفحة 51 (تابع)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page52">
+<div class="section-title">صفحة 52</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: ما السبب الرئيسي الذي أدى إلى فقدان التعددية الحزبية قبل ثورة 1952م تأثيرها الفعلي في الشارع المصري؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تحوّل التعددية الحزبية إلى حالة من الانقسام السياسي وضعف القيادة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: يُستدل من قرار الملك فاروق بحل مجلس إدارة نادي الضباط على أن استخدام السلطة القمعية في مواجهة الحراك السياسي قد يؤدي إلى:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - تسريع وتيرة التصعيد الثوري بدلًا من احتوائه.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- بم تفسر: عجز الأحزاب السياسية قبل ثورة 1952م عن تحقيق الطموحات الوطنية والشعبية؟</div>
+<div class="answer"><strong>الإجابة:</strong> بسبب الانقسام وضعف القيادات، والصراع على السلطة.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- لم يكن حريق القاهرة في 26 يناير 1952 حدثًا عشوائيًا بل نتيجة تراكمية لتدهور الأوضاع في البلاد. أثبت.</div>
+<div class="answer"><strong>الإجابة:</strong> كان نتيجة تراكم الأزمات السياسية والاقتصادية والاجتماعية.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- قدم توقع: في حال نجحت المفاوضات المصرية مع بريطانيا قبل عام 1952م في تحقيق الاستقلال التام.</div>
+<div class="answer"><strong>الإجابة:</strong> لربما تأخرت ثورة 23 يوليو، أو تغيرت طبيعة النظام السياسي بشكل مختلف.</div>
+</div>
+<div class="page-number">صفحة 52</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page52b">
+<div class="section-title">صفحة 52 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: يُمكن إرجاع فشل المفاوضات مع بريطانيا إلى:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - ضعف الجبهة الداخلية وتفكك الحياة الحزبية.</div>
+</div>
+<div class="page-number">صفحة 52 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page53">
+<div class="section-title">صفحة 53 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: تمثل قرارات "مجانية التعليم وتحديد الملكية الزراعية" في جوهرها إعادة صياغة للمجتمع المصري قائمة على:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - الحد من مظاهر الاحتكار وتوسيع فرص الحراك الاجتماعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما العلاقة بين: "إلغاء مصطفى النحاس لمعاهدة 1936م في أكتوبر 1951م" و"معركة قسم شرطة الإسماعيلية في 25 يناير 1952م"؟</div>
+<div class="answer"><strong>الإجابة:</strong> إلغاء المعاهدة أدى إلى تصاعد المقاومة ضد القوات البريطانية، مما أدى إلى معركة الإسماعيلية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- دلل: "شكلت الضغوط الأمريكية والبنك الدولي محفزًا لإدارة المصرية لنقل ملكية الموارد السيادية للأمة".</div>
+<div class="answer"><strong>الإجابة:</strong> رفض التمويل الأمريكي لبناء السد العالي دفع مصر لتأميم قناة السويس.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ما أوجه الاختلاف بين: "التأميم" و"التمصير"؟</div>
+<div class="answer"><strong>الإجابة:</strong> التأميم هو نقل الملكية للدولة، والتمصير هو توطين الوظائف والصناعات في مصر.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- اختر: أي العوامل التالية كان أكثر تأثيرًا في جعل حادث 4 فبراير 1942م أزمة سياسية؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - التدخل البريطاني المباشر في تشكيل الوزارة.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- اختر: يُستدل من لجوء حكومة الثورة إلى سياسات "التمصير والتأميم" على إدراك القيادة السياسية لأهمية:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الربط بين تحرير المقدرات الوطنية وتعزيز استقلال الإرادة السياسية.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- أثبت خطأ العبارة: "شكلت انتخابات نادي الضباط عام 1951م تنافسًا ذاتيًا يخص الشأن العسكري الداخلي دون صلة بالنظام السياسي الحاكم".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. كانت الانتخابات تعبيرًا عن رفض الضباط الأحرار للنظام الملكي.</div>
+</div>
+<div class="page-number">صفحة 53 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page56">
+<div class="section-title">صفحة 56</div>
+<h4>الأداء الصفي (الفترة الأولى: مفهوم الاستعمار الجديد وأدواته)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يتمثل هدف حروب الجيل الرابع في ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - احتلال العقول.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: الفقاعة المعلوماتية في التواصل الاجتماعي تؤدي إلى ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - عزل المستخدم عن الحقائق.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- في ضوء الصورة المقابلة، أجب: تعبر الصورة عن إحدى أدوات حروب الجيل الرابع، وهي ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - التضليل الإعلامي ونشر الشائعات.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- استنتج العلاقة بين محتوى الصورة ووعي الأفراد واستقرار المجتمع.</div>
+<div class="answer"><strong>الإجابة:</strong> كلما زاد التضليل الإعلامي، ضعف وعي الأفراد، وتراجع استقرار المجتمع.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- وضح دورك بصفتك مواطنًا مسؤولًا عن حماية نفسك من استقبال الأخبار الكاذبة والمشوهة.</div>
+<div class="answer"><strong>الإجابة:</strong> التحقق من المصادر، وعدم نشر الشائعات، والوعي النقدي.</div>
+</div>
+<div class="page-number">صفحة 56</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page57">
+<div class="section-title">صفحة 57</div>
+<h4>التقييم الأسبوعي (نموذج أ)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يختلف الاستعمار الجديد عن الاستعمار التقليدي القديم في أنه:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الهيمنة الاقتصادية والتكنولوجية والتأثير في وعي الشعوب.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: تستهدف حروب الجيل الرابع فئة الشباب بصورة خاصة من خلال:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - استغلال طاقاتهم وتوجيهها نحو الصراع الداخلي ونشر الإحباط.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أيد: "الاستقلال المالي والاقتصادي هو الحصن المنيع للحفاظ على الاستقلال السياسي والسيادة الوطنية".</div>
+<div class="answer"><strong>الإجابة:</strong> الاستقلال المالي يحمي القرار الوطني من الضغوط الخارجية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- قارن بين: دور الأسرة ودور الإعلام الوطني في حماية الهوية الوطنية وبناء المناعة الفكرية.</div>
+<div class="answer"><strong>الإجابة:</strong> الأسرة تغرس القيم والأخلاق، والإعلام الوطني يبني إدراكًا متوازنًا للواقع ويواجه الشائعات.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ماذا يحدث إذا: فقد المجتمع وعيه التاريخي واستسلم للروايات التاريخية المزيفة التي تستهدف حضارته؟</div>
+<div class="answer"><strong>الإجابة:</strong> ضعف الهوية الوطنية، وزيادة الانقسامات، وسهولة اختراق المجتمع.</div>
+</div>
+<div class="page-number">صفحة 57</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page57b">
+<div class="section-title">صفحة 57 (نموذج ب)</div>
+<div class="qa-block">
+<div class="question">1- اختر: تؤدي "الفقاعات المعلوماتية" على المنصات الرقمية في سياق حروب الجيل الرابع إلى:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - عزل الفرد عن تنوع الآراء وتعزيز الاستقطاب الفكري.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: تعمل حروب الجيل الرابع على غرس الهشاشة القيمية لدى الشباب من خلال استبدال القيم الأصيلة بـ:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - السلوكيات الفردية والاستهلاك المفرط.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أيد: "تعد الحرب الإعلامية والشائعات خطرًا يوازي أو يفوق خطورة السلاح التقليدي في تفكيك الدول".</div>
+<div class="answer"><strong>الإجابة:</strong> الشائعات تزعزع الثقة في المؤسسات وتضعف التماسك الاجتماعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- قارن بين الأدوات التكنولوجية بوصفها إحدى أدوات الاستعمار الجديد، وصناعة القيادات الوهمية كأحد أدوات حروب الجيل الرابع.</div>
+<div class="answer"><strong>الإجابة:</strong> الأدوات التكنولوجية تستخدم للسيطرة على البيانات، والقيادات الوهمية تستخدم لتضليل الرأي العام.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ماذا يحدث إذا: تم احتكار البنية التحتية للإنترنت ومراكز البيانات من قبل الشركات الأجنبية بالدول النامية؟</div>
+<div class="answer"><strong>الإجابة:</strong> تضعف سيادة الدول النامية، وتصبح عرضة للضغوط السياسية والاقتصادية.</div>
+</div>
+<div class="page-number">صفحة 57 (نموذج ب)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page58">
+<div class="section-title">صفحة 58 (نموذج ج)</div>
+<div class="qa-block">
+<div class="question">1- اختر: يلجأ الاستعمار الحديث إلى تصدير قيادات وهمية عبر وسائل التواصل يهدف ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إحداث الفوضى وتفتيت الرأي العام.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أيد: "حماية الدولة الهوية الوطنية مسؤولية مجتمعية مشتركة لا تتأتى بالسلاح فقط بل بالوعي والعمل".</div>
+<div class="answer"><strong>الإجابة:</strong> الوعي والعمل هما خط الدفاع الأول ضد الاختراق الفكري.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- قارن بين: الأدوات الاقتصادية كأحد أدوات الاستعمار الجديد، والإعلام المضلل كأحد أدوات حروب الجيل الرابع.</div>
+<div class="answer"><strong>الإجابة:</strong> الأدوات الاقتصادية تفرض التبعية، والإعلام المضلل يزيف الوعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ماذا يحدث إذا: نجحت حروب الجيل الرابع في تجريد الشباب من قيم الفضيلة والمواطنة واستبدالها بالفردية والاستهلاك المفرط؟</div>
+<div class="answer"><strong>الإجابة:</strong> تتفكك الروابط الاجتماعية، وتضعف الهوية الوطنية، ويسهل اختراق المجتمع.</div>
+</div>
+<div class="page-number">صفحة 58 (نموذج ج)</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u2-page59">
+<div class="section-title">صفحة 59</div>
+<h4>التدريب الشهري</h4>
+<div class="qa-block">
+<div class="question">1- اختر: مع زيادة التدخل الأجنبي في مصر اندلعت الثورة العرابية وكانت لها عدة مطالب يخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تشكيل حكومة مختلطة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: كل ما يلي يُعد من أدوات الاستعمار الجديد ويخرج عنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - تعزيز مرتكزات الهوية كالدين واللغة والتاريخ.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- اختر: إذا نجحت دولة في القضاء على الاحتكار وتحقيق العدالة الاجتماعية، فأي أهداف ثورة يوليو تكون قد اقتربت من تحقيقها؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الإصلاح الاقتصادي والاجتماعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- اختر: تدل سياسة "تفكيك القوة العسكرية" التي نفذها الاحتلال البريطاني فور دخوله مصر على أن الاستعمار الحديث يدرك جيدًا أن:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إحكام السيطرة على الدولة يتطلب الحد من قدرتها على حماية استقلالها ومصالحها.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- اختر: تعد الحملة الفرنسية نقطة تحول في تاريخ مصر لأنها:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - أسهمت في بداية تشكل الوعي المصري الحديث.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- اختر: الاستنتاج التاريخي المباشر لمشاركة المرأة المصرية بفعالية في الفعاليات والعمل الوطني هو:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - إحداث تحول جذري في الوعي السياسي المصري.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- اختر: يعتمد الاستعمار الجديد في فرض هيمنته على الدول النامية بشكل أساسي على:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - التبعية الاقتصادية واحتكار التكنولوجيا.</div>
+</div>
+<div class="page-number">صفحة 59</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div></section><section class="unit-section" data-unit="3" id="unit-3">
+<div class="container">
+<h1>حل كتاب الأداءات والتقييمات - التاريخ الوطني</h1>
+<p style="text-align: center; color: #555; margin-bottom: 20px;">البكالوريا المصرية - الصف الثاني الثانوي - الجزء الأول</p>
+<!-- صفحة 60 -->
+
+<!-- صفحة 61 -->
+
+<!-- صفحة 62 -->
+
+<!-- صفحة 63 -->
+
+<!-- صفحة 64 -->
+
+<!-- صفحة 65 -->
+
+<!-- صفحة 66 -->
+
+<!-- صفحة 67 -->
+
+<!-- صفحة 68 -->
+
+</div>
+<div class="page-section" id="u3-page60">
+<div class="section-title">صفحة 60</div>
+<h4>تابع الدرس الرابع: الهوية الوطنية في مواجهة الاستعمار الجديد</h4>
+<div class="qa-block">
+<div class="question">1- أكد فهمك: تجمع بعض التطبيقات التكنولوجية بيانات ضخمة عن المستخدمين، ومراكز البيانات في بعض الدول النامية تدار بواسطة شركات أجنبية؛ ما يمنح هذه الشركات القدرة على التأثير في القرار الاقتصادي والسياسي.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، هذا صحيح. احتكار التكنولوجيا والبيانات يمنح الشركات الأجنبية نفوذًا كبيرًا.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- في ضوء العبارة: "من يملك التكنولوجيا يملك القرار، ومن يملك البيانات يملك المستقبل". إلى أي مدى تتفق مع هذه العبارة؟</div>
+<div class="answer"><strong>الإجابة:</strong> أتفق. امتلاك التكنولوجيا والبيانات أصبح مصدر قوة في العصر الحديث.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- فسر: كيف يمكن أن تتحول التكنولوجيا إلى أداة للاستعمار الجديد؟</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال احتكار البنية التحتية للإنترنت ومراكز البيانات، والتحكم في توجيه القرارات الوطنية.</div>
+</div>
+<div class="page-number">صفحة 60</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page61">
+<div class="section-title">صفحة 61</div>
+<h4>حروب الجيل الرابع</h4>
+<div class="qa-block">
+<div class="question">1- يعتمد الاستعمار الجديد على استخدام عدة أساليب لتشويه مرتكزات الهوية (الدين - اللغة - التاريخ). اذكرها.</div>
+<div class="answer"><strong>الإجابة:</strong> الحرب الإعلامية، ونشر الشائعات، والهجمات الإلكترونية، واستغلال الجماعات غير النظامية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما الأدوات التي تستخدمها حروب الجيل الرابع لتحقيق أهدافها؟ وكيف يمكن أن تتسبب في إضعاف الدولة من دون مواجهة عسكرية مباشرة؟</div>
+<div class="answer"><strong>الإجابة:</strong> الإعلام المضلل، والمنصات الرقمية، واستقطاب الشباب، وصناعة قيادات وهمية. تؤدي إلى تفكيك المجتمع وإضعاف الثقة في المؤسسات.</div>
+</div>
+<div class="page-number">صفحة 61</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page62">
+<div class="section-title">صفحة 62</div>
+<h4>أدوات حروب الجيل الرابع</h4>
+<div class="qa-block">
+<div class="question">1- يأتي الإعلام المضلل في مقدمة أدوات حروب الجيل الرابع التي لا تستهدف احتلال الأراضي، بل إعادة تشكيل الوعي الجماعي. اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال تضخيم السلبيات، ونشر الإحباط، وزعزعة الثقة في المؤسسات، وتأثير في عملية صنع القرار، وتهديد التماسك الاجتماعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- إلى أي مدى يمكن اعتبار الإعلام المضلل أداة لتفكيك المجتمعات؟</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنه يشوه الحقائق ويخلق انقسامات ويضعف الثقة بين أفراد المجتمع ومؤسساته.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- المنصات الرقمية واستهداف العقول: تحولت منصات التواصل الاجتماعي إلى أدوات تأثير نفسي تعتمد على خوارزميات ذكية توجه المحتوى وفق اهتمامات المستخدمين؛ حيث تستهدف الفئات الأكثر تأثيرًا، خاصةً الشباب.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، من خلال الفقاعات المعلوماتية التي تعزل الفرد عن تنوع الآراء.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- استقطاب الشباب: تعد فئة الشباب الأكثر استهدافًا في حروب الجيل الرابع؛ لما تمتلكه من طاقة وقدرة على التأثير المجتمعي.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنهم الأكثر استخدامًا للتكنولوجيا والأكثر تأثرًا بالمحتوى الرقمي.</div>
+</div>
+<div class="page-number">صفحة 62</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page63">
+<div class="section-title">صفحة 63</div>
+<h4>صناعة قيادات وهمية</h4>
+<div class="qa-block">
+<div class="question">1- في حروب الجيل الرابع، يُروّج لشخصيات غير فاعلة وغير مؤثرة على أنها رموز للتغيير أو منقذة للوطن؛ بهدف: تشكيل صراعات وهمية بين المجتمع والمؤسسات، وتفتيت الرأي العام وإضعاف التماسك الاجتماعي.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، هذه من أخطر أدوات حروب الجيل الرابع.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- كيف يمكن للقيادة المزيفة أن تؤثر على الرأي العام وسلوك الأفراد؟</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال تقديم حلول وهمية، وتضليل الشباب، وإضعاف الثقة في القيادات الحقيقية.</div>
+</div>
+<div class="page-number">صفحة 63</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page64">
+<div class="section-title">صفحة 64</div>
+<h4>دور الأسرة في مواجهة حروب الجيل الرابع</h4>
+<div class="qa-block">
+<div class="question">1- "الأسرة هي خط الدفاع الأول في حماية الهوية الوطنية"، في ضوء العبارة السابقة، اشرح هل يمكن للمجتمع أن يصمد من دون وعي جمعي قوي؟ برر رأيك.</div>
+<div class="answer"><strong>الإجابة:</strong> لا يمكن للمجتمع أن يصمد من دون وعي جمعي قوي، لأن الوعي هو الأساس في مواجهة الاختراق الفكري.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما دور الأسرة في بناء الوعي وحماية الهوية؟</div>
+<div class="answer"><strong>الإجابة:</strong> غرس القيم والأخلاق، والحفاظ على اللغة والثقافة، وتنمية الوعي الديني المعتدل، وتشجيع الحوار داخل الأسرة.</div>
+</div>
+<div class="page-number">صفحة 64</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page65">
+<div class="section-title">صفحة 65</div>
+<h4>المؤسسات التعليمية والدينية</h4>
+<div class="qa-block">
+<div class="question">1- تُعد المؤسسات التعليمية والدينية، وفي مقدمتها الأزهر والكنيسة، ركائز أساسية في بناء المناعة الفكرية للمجتمع. اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال تقديم خطاب ديني وسطي معتدل يعزز قيم التسامح والتعايش، وترسيخ الوعي التاريخي بعمق الحضارة المصرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- استنتج العلاقة بين تدريس التاريخ المصري وتعزيز قيم التسامح والتعايش.</div>
+<div class="answer"><strong>الإجابة:</strong> تدريس التاريخ المصري يعزز الوعي بالتنوع الثقافي والديني الذي شكل الشخصية المصرية عبر العصور.</div>
+</div>
+<div class="page-number">صفحة 65</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page66">
+<div class="section-title">صفحة 66</div>
+<h4>الإعلام الوطني</h4>
+<div class="qa-block">
+<div class="question">1- يمثل الإعلام الوطني إحدى أهم أدوات تشكيل الوعي في المجتمع. اشرح دوره.</div>
+<div class="answer"><strong>الإجابة:</strong> نقل الأخبار، وبناء إدراك متوازن للواقع، ومواجهة الشائعات، وتقديم رواية موضوعية، وإبراز القدوات الحقيقية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما أثر الشائعات المتكررة على ثقة المجتمع في مؤسساته؟</div>
+<div class="answer"><strong>الإجابة:</strong> تزعزع الثقة، وتضعف التماسك الاجتماعي، وتخلق حالة من الإحباط.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- كيف تغيّر دور الإعلام من ناقل للخبر إلى صانع للوعي في العصر الرقمي؟</div>
+<div class="answer"><strong>الإجابة:</strong> أصبح الإعلام فاعلًا أساسيًا في تشكيل اتجاهات الرأي العام، وليس مجرد ناقل للمعلومة.</div>
+</div>
+<div class="page-number">صفحة 66</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page67">
+<div class="section-title">صفحة 67</div>
+<h4>تدريبات الدرس</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يتمثل هدف حروب الجيل الرابع في ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - احتلال العقول.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: الفقاعة المعلوماتية في التواصل الاجتماعي تؤدي إلى ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - عزل المستخدم عن الحقائق.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- في ضوء الصورة المقابلة، أجب: تعبر الصورة عن إحدى أدوات حروب الجيل الرابع، وهي ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - التضليل الإعلامي ونشر الشائعات.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- استنتج العلاقة بين محتوى الصورة ووعي الأفراد واستقرار المجتمع.</div>
+<div class="answer"><strong>الإجابة:</strong> كلما زاد التضليل الإعلامي، ضعف وعي الأفراد، وتراجع استقرار المجتمع.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- وضح دورك بصفتك مواطنًا مسؤولًا عن حماية نفسك من استقبال الأخبار الكاذبة والمشوهة.</div>
+<div class="answer"><strong>الإجابة:</strong> التحقق من المصادر، وعدم نشر الشائعات، والوعي النقدي.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- «تعد الشائعات أخطر من السلاح في بعض المواقف». ناقش ذلك، ثم أجب عن الأسئلة التالية:</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنها تزعزع الثقة وتفكك المجتمع من الداخل.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- انتشرت شائعة على مواقع التواصل تهدف إلى إثارة الخوف بين المواطنين، كيف تتعامل معها بوصفك مواطنًا واعيًا؟</div>
+<div class="answer"><strong>الإجابة:</strong> التحقق من المصادر الرسمية، وعدم نشرها، وتوعية الآخرين.</div>
+</div>
+<div class="qa-block">
+<div class="question">8- إذا وصلت خبر مجهول المصدر يسيء إلى مؤسسات الدولة، فما الخطوات التي تتبعها؟</div>
+<div class="answer"><strong>الإجابة:</strong> عدم تداوله، والإبلاغ عنه، والتحقق من صحة الخبر من المصادر الرسمية.</div>
+</div>
+<div class="qa-block">
+<div class="question">9- حدد العلاقة بين وسائل السيطرة الاستعمارية قديمًا، ووسائل التأثير غير المباشر في الاستعمار الجديد.</div>
+<div class="answer"><strong>الإجابة:</strong> القديم اعتمد على القوة العسكرية، والجديد يعتمد على التكنولوجيا والاقتصاد والإعلام.</div>
+</div>
+<div class="qa-block">
+<div class="question">10- ناقش: دور الهوية في دعم المقاومة.</div>
+<div class="answer"><strong>الإجابة:</strong> الهوية هي الحصن الذي يحمي المجتمع من الاختراق الفكري والثقافي.</div>
+</div>
+<div class="qa-block">
+<div class="question">11- ماذا لو فقدت الدولة هويتها؟</div>
+<div class="answer"><strong>الإجابة:</strong> تتفكك الروابط الاجتماعية، وتضعف السيادة، ويسهل اختراق الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">12- «الاستعمار الجديد أخطر من الاستعمار العسكري». ناقش.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنه يستهدف العقول والوعي، ويخترق المجتمع من الداخل.</div>
+</div>
+<div class="qa-block">
+<div class="question">13- فسر العلاقة بين: الإعلام - الثقافة - الهوية.</div>
+<div class="answer"><strong>الإجابة:</strong> الإعلام يؤثر في الثقافة، والثقافة تشكل الهوية.</div>
+</div>
+<div class="qa-block">
+<div class="question">14- ماذا لو فقد أفراد المجتمع وعيهم الثقافي؟</div>
+<div class="answer"><strong>الإجابة:</strong> يصبح المجتمع عرضة للاختراق الفكري والثقافي.</div>
+</div>
+<div class="qa-block">
+<div class="question">15- اكتب فقرة توضح كيفية تحقيق التوازن بين الانفتاح والحفاظ على الهوية.</div>
+<div class="answer"><strong>الإجابة:</strong> الانفتاح على الآخر مع التمسك بالثوابت والقيم الأصيلة.</div>
+</div>
+<div class="page-number">صفحة 67</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u3-page68">
+<div class="section-title">صفحة 68</div>
+<h4>تقييم ختامي على الوحدة الثانية</h4>
+<div class="qa-block">
+<div class="question">1- وضح العلاقة بين: التحديث - التبعية - الاستقلال.</div>
+<div class="answer"><strong>الإجابة:</strong> التحديث قد يؤدي إلى التبعية إذا لم يكن مبنيًا على أسس وطنية، والاستقلال هو الحصن الذي يحمي التحديث من التبعية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- «الصراع على تزييف الوعي أخطر من الصراع العسكري». ناقش.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنه يستهدف العقول ويفكك المجتمعات من الداخل.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- قارن بين: أساليب الاستعمار القديم وأساليب الاستعمار الجديد.</div>
+<div class="answer"><strong>الإجابة:</strong> القديم: احتلال عسكري مباشر. الجديد: هيمنة اقتصادية وتكنولوجية وثقافية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- كيف نجحت مصر في مواجهة محاولات طمس هويتها؟</div>
+<div class="answer"><strong>الإجابة:</strong> بتمسك الشعب بهويته، ومقاومة الاحتلال، والحفاظ على اللغة والتاريخ.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- حلل كيف تداخلت العوامل التالية في تشكيل تاريخ مصر الحديث: التحديث - التدخل الخارجي - الوعي القومي.</div>
+<div class="answer"><strong>الإجابة:</strong> التحديث دفع للانفتاح، والتدخل الخارجي دفع للمقاومة، والوعي القومي وحد الصفوف.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- «الصراع الحقيقي لم يكن على الأرض، بل على الوعي». ناقش بالأدلة.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، حروب الجيل الرابع تستهدف العقول والوعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- كيف يمكن الاستفادة من التجربة المصرية في عصر محمد علي في مواجهة التحديات الحالية؟</div>
+<div class="answer"><strong>الإجابة:</strong> بناء اقتصاد وطني قوي، وتطوير التعليم، وتعزيز الوعي الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">8- قارن بين دور كل من ثورتي 1882م و1919م في تشكيل الوعي الوطني.</div>
+<div class="answer"><strong>الإجابة:</strong> 1882م رفعت شعار "مصر للمصريين"، و1919م حولت الوعي إلى حركة شعبية شاملة.</div>
+</div>
+<div class="qa-block">
+<div class="question">9- فسر أسباب الاحتلال البريطاني لمصر.</div>
+<div class="answer"><strong>الإجابة:</strong> حماية المصالح البريطانية في قناة السويس، والتحكم في طرق التجارة.</div>
+</div>
+<div class="qa-block">
+<div class="question">10- ماذا لو لم تأت الحملة الفرنسية على مصر؟</div>
+<div class="answer"><strong>الإجابة:</strong> لربما تأخر الوعي بالتحديث والانفتاح على الحضارة الأوروبية.</div>
+</div>
+<div class="qa-block">
+<div class="question">11- حدد دور الوعي القومي في: مقاومة الاحتلال - بناء الدولة.</div>
+<div class="answer"><strong>الإجابة:</strong> الوعي القومي هو الأساس في مقاومة الاحتلال وبناء الدولة.</div>
+</div>
+<div class="qa-block">
+<div class="question">12- استنتج العوامل التي ساعدت مصر على التحول من التبعية تحت الاحتلال البريطاني إلى السعي نحو السيادة.</div>
+<div class="answer"><strong>الإجابة:</strong> الوعي القومي، والثورات الشعبية، والقيادات الوطنية، والتمسك بالهوية.</div>
+</div>
+<div class="page-number">صفحة 68</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div></section><section class="unit-section" data-unit="4" id="unit-4">
+<div class="container">
+<h1>حل كتاب الأداءات والتقييمات - التاريخ الوطني</h1>
+<p style="text-align: center; color: #555; margin-bottom: 20px;">البكالوريا المصرية - الصف الثاني الثانوي - الجزء الأول</p>
+<h2>الوحدة الثالثة: مصر وقضايا التحرر الوطني في الوطن العربي وإفريقيا</h2>
+<!-- الدرس الأول -->
+<h3>الدرس الأول: حركات التحرر الوطني ضد الاحتلال الفرنسي والإيطالي في العالم العربي</h3>
+<!-- صفحة 96 -->
+
+<!-- صفحة 97 -->
+
+<!-- صفحة 98 -->
+
+<!-- صفحة 99 -->
+
+<!-- صفحة 100 -->
+
+<!-- صفحة 101 -->
+
+<!-- صفحة 102 -->
+
+<!-- صفحة 103 -->
+
+<!-- الدرس الثاني -->
+<h3>الدرس الثاني: حركات التحرر الوطني ضد الاحتلال البريطاني والإسباني في العالم العربي</h3>
+<!-- صفحة 106 -->
+
+<!-- صفحة 107 -->
+
+<!-- صفحة 108 -->
+
+<!-- صفحة 109 -->
+
+<!-- صفحة 110 -->
+
+<!-- الدرس الثالث -->
+<h3>الدرس الثالث: مرتكزات الدور المصري إقليميًا ودوليًا</h3>
+<!-- صفحة 113 -->
+
+<!-- صفحة 114 -->
+
+<!-- صفحة 115 -->
+
+<!-- صفحة 116 -->
+
+<!-- صفحة 117 -->
+
+<!-- الدرس الرابع -->
+<h3>الدرس الرابع: دور مصر في دعم حركات التحرر الوطني</h3>
+<!-- صفحة 119 -->
+
+<!-- صفحة 120 -->
+
+<!-- صفحة 121 -->
+
+<!-- صفحة 122 -->
+
+<!-- صفحة 123 -->
+
+<!-- صفحة 124 -->
+
+<!-- صفحة 125 -->
+
+</div>
+<div class="page-section" id="u4-page96">
+<div class="section-title">صفحة 96</div>
+<h4>الأداء الصفي (الفترة الأولى: آليات السيطرة الاستعمارية الفرنسية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: اعتمد الاحتلال الفرنسي في بداية سيطريته على البلدان العربية على أي مما يلي؟</div>
+<div class="answer"><strong>الإجابة:</strong> أ - القوة العسكرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ماذا كان يحدث إذا: وُجِّهت الموارد الاقتصادية والمالية في الدول العربية التي احتلتها فرنسا لصالح السكان المحليين وتحقيق التنمية الوطنية؟</div>
+<div class="answer"><strong>الإجابة:</strong> لتحسنت أحوال السكان، ولقلت المقاومة، ولتغيرت طبيعة العلاقة مع المستعمر.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أي الرأيين التاليين تؤيد: الاستغلال الاقتصادي أداة سيطرة لا تقل خطورة عن القوة العسكرية، أم كانت الإجراءات الاقتصادية الفرنسية مجرد نتائج جانبية غير مقصودة للوجود العسكري؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الأول.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- قارن بين: الاستغلال الاقتصادي الفرنسي في كل من الجزائر وموريتانيا.</div>
+<div class="answer"><strong>الإجابة:</strong> في الجزائر: تحويل الأراضي لزراعة الكروم (العنب) لصناعة الخمور. في موريتانيا: استغلال خام الحديد لتنشيط المصانع الفرنسية.</div>
+</div>
+<div class="page-number">صفحة 96</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page97">
+<div class="section-title">صفحة 97</div>
+<h4>الهيمنة الثقافية</h4>
+<div class="qa-block">
+<div class="question">1- كيف نجحت فرنسا في تحقيق أهدافها الاستعمارية؟ أيد إجابتك بأدلة تاريخية.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال نشر اللغة الفرنسية، والتحكم في النظام التعليمي، وإضعاف الهوية الوطنية، ودعم نخب محلية مرتبطة بالثقافة الفرنسية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- استنتج أهداف السياسة التعليمية الاستعمارية الفرنسية في بلاد المغرب.</div>
+<div class="answer"><strong>الإجابة:</strong> إعداد نخبة مغربية مرتبطة بالإدارة الاستعمارية، وإضعاف التعليم التقليدي، وتهميش اللغة العربية.</div>
+</div>
+<div class="page-number">صفحة 97</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page98">
+<div class="section-title">صفحة 98</div>
+<h4>تفكيك البنية الاجتماعية</h4>
+<div class="qa-block">
+<div class="question">1- هل كان تفكيك المجتمع أداة أكثر خطورة من القوة العسكرية؟ برر إجابتك.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، لأنه يؤدي إلى إضعاف التماسك المجتمعي وتسهيل السيطرة الاستعمارية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أسفرت سياسات الاحتلال الفرنسي عن إضعاف تماسك المجتمع ووحدته الداخلية. اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال إثارة النزاعات الطائفية والعرقية، وتفكيك الروابط الاجتماعية، وتهميش القيادات الوطنية.</div>
+</div>
+<div class="page-number">صفحة 98</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page99">
+<div class="section-title">صفحة 99</div>
+<h4>آليات السيطرة الاستعمارية الإيطالية في ليبيا</h4>
+<div class="qa-block">
+<div class="question">1- حلل العلاقة بين استخدام القوة العسكرية واستمرار المقاومة الليبية.</div>
+<div class="answer"><strong>الإجابة:</strong> كلما زادت القوة العسكرية والقمع، زادت المقاومة الليبية واستمرت لفترات طويلة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما الهدف من سياسة الاستيلاء على الأراضي الزراعية الخصبة في ليبيا ومنحها للمستوطنين الإيطاليين؟</div>
+<div class="answer"><strong>الإجابة:</strong> حرمان السكان المحليين من أراضيهم، وتوطين الإيطاليين، وتغيير التركيبة السكانية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما النتائج المترتبة على حرمان السكان المحليين من أراضيهم الزراعية في ليبيا؟</div>
+<div class="answer"><strong>الإجابة:</strong> تدهور مستوى معيشتهم، وزيادة معاناتهم، واستمرار المقاومة ضد الاحتلال.</div>
+</div>
+<div class="page-number">صفحة 99</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page100">
+<div class="section-title">صفحة 100</div>
+<h4>الهيمنة الثقافية وتفكيك البنية الاجتماعية</h4>
+<div class="qa-block">
+<div class="question">1- أيهما كان أكثر تأثيرًا: محاولات الطمس الثقافي أم المقاومة الشعبية؟</div>
+<div class="answer"><strong>الإجابة:</strong> المقاومة الشعبية كانت أكثر تأثيرًا، لأنها أفشلت محاولات الطمس الثقافي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- حلل كيف استخدم الاحتلال الإيطالي الهيمنة الثقافية أداة لأحكام السيطرة على ليبيا.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال التضييق على التعليم الديني في الزوايا والكتاتيب، ونشر المدارس الإيطالية.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- توقع رد فعل المقاومة الشعبية إزاء الإجراءات التي اتخذتها إيطاليا في ليبيا.</div>
+<div class="answer"><strong>الإجابة:</strong> تصاعد الغضب والرفض الشعبي، واندلاع الثورات والانتفاضات، وظهور حركات مقاومة مسلحة.</div>
+</div>
+<div class="page-number">صفحة 100</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page101">
+<div class="section-title">صفحة 101</div>
+<h4>أساليب المقاومة</h4>
+<div class="qa-block">
+<div class="question">1- ما الذي تغيّر في طبيعة القيادة الوطنية بعد ظهور التنسيق بين الحركات؟</div>
+<div class="answer"><strong>الإجابة:</strong> أصبحت أكثر تنظيمًا وفاعلية، وظهرت قيادات قادرة على إدارة الصراع، وتنامت روح التضامن بين الشعوب.</div>
+</div>
+<div class="page-number">صفحة 101</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page102">
+<div class="section-title">صفحة 102</div>
+<h4>من أقوال رموز الحركة الوطنية</h4>
+<div class="qa-block">
+<div class="question">1- ما الهدف المشترك بين هذه الأقوال؟</div>
+<div class="answer"><strong>الإجابة:</strong> التأكيد على أهمية النضال والوحدة والتضحية من أجل الاستقلال والحرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- قارن بين رؤية الزعماء الوطنيين في الوطن العربي لطريقة تحقيق الاستقلال في ضوء الأقوال.</div>
+<div class="answer"><strong>الإجابة:</strong> تتنوع الرؤى بين المقاومة المسلحة، والعمل السياسي والتنظيمي، والوحدة الوطنية.</div>
+</div>
+<div class="page-number">صفحة 102</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page103">
+<div class="section-title">صفحة 103</div>
+<h4>تدريبات الدرس</h4>
+<div class="qa-block">
+<div class="question">1- اختر: إذا تأملت العلاقة بين الاستغلال الاقتصادي وتنامي الوعي الوطني في الدول العربية التي احتلّت، يمكن استنتاج أن ...</div>
+<div class="answer"><strong>الإجابة:</strong> ج - شكّل الاستغلال الاقتصادي اختلالات اجتماعية عميقة أسهمت في تنامي الوعي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: مثّلت أهم التحولات الجوهرية التي أحدثها العمل السياسي والتنظيمي في مسار النضال الوطني بالدول العربية ضد ...</div>
+<div class="answer"><strong>الإجابة:</strong> أ - تحويل النضال من مواجهة عفوية إلى عمل مُنظَّم قائم على القيادة والأحزاب.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- «لم تكن السيطرة الاستعمارية الفرنسية في الوطن العربي نتيجة قوة عسكرية فقط، بل نتيجة منظومة متكاملة من الآليات». حلل العبارة ثم حدد الآلية الأكثر تأثيرًا من وجهة نظرك، مع التبرير.</div>
+<div class="answer"><strong>الإجابة:</strong> الآليات تشمل: السيطرة العسكرية، الاستغلال الاقتصادي، الهيمنة الثقافية، تفكيك البنية الاجتماعية. الأكثر تأثيرًا: الهيمنة الثقافية لأنها تستهدف العقول.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- «الهيمنة الثقافية كانت أخطر من السيطرة العسكرية في ترسيخ الاستعمار الفرنسي». أثبت صحة أو خطأ العبارة السابقة، مدعمًا رأيك بالأدلة التاريخية المناسبة.</div>
+<div class="answer"><strong>الإجابة:</strong> صحيحة. لأنها تستهدف تغيير هوية الشعوب وطمس ثقافتها.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- فسر العلاقة بين كلّ مما يأتي: السياسات الاقتصادية الاستعمارية لفرنسا ← تنامي الوعي الوطني.</div>
+<div class="answer"><strong>الإجابة:</strong> الاستغلال الاقتصادي أدى إلى تدهور أحوال السكان، مما دفعهم للوعي والمقاومة.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- فسر العلاقة بين: سياسة تفكيك البنية الاجتماعية التي انتهجتها إيطاليا ← المقاومة المسلحة.</div>
+<div class="answer"><strong>الإجابة:</strong> تفكيك البنية الاجتماعية أدى إلى تصاعد الغضب والرفض الشعبي، وظهور المقاومة المسلحة.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- فسر العلاقة بين: العمل السياسي والتنظيمي في الدول العربية المحتلة ← تحقيق الاستقلال.</div>
+<div class="answer"><strong>الإجابة:</strong> العمل السياسي والتنظيمي وحد القوى الوطنية، ونظم المقاومة، وساعد في كسب التأييد الدولي.</div>
+</div>
+<div class="page-number">صفحة 103</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page106">
+<div class="section-title">صفحة 106</div>
+<h4>الأداء الصفي (آليات السيطرة الاستعمارية البريطانية)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يُستدل من لجوء بريطانيا إلى سياسة النفوذ الخفي، من خلال توجيه القرارات عبر مستشارين بريطانيين مع الإبقاء على الأنظمة الحاكمة، على اعتمادها مبدأ:</div>
+<div class="answer"><strong>الإجابة:</strong> أ - إعادة تنظيم الحكم المحلي مع الإبقاء على استقلال قراراته الداخلية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اعتماد بريطانيا على القوة العسكرية في فرض سيطرتها على الوطن العربي، دلل على صحة العبارة السابقة بالأدلة التاريخية المناسبة.</div>
+<div class="answer"><strong>الإجابة:</strong> احتلال مصر 1882م، والسيطرة على قناة السويس، وإنشاء قواعد عسكرية في العراق وفلسطين.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما العلاقة بين: السيطرة العسكرية والسيطرة السياسية في السياسة الاستعمارية البريطانية؟</div>
+<div class="answer"><strong>الإجابة:</strong> السيطرة العسكرية مهدت للسيطرة السياسية، والسيطرة السياسية عززت السيطرة العسكرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- تسعى مؤسسة كبيرة إلى السيطرة على سوق معين، فأنشأت فروعًا جديدة، ثم بدأت تؤثر في قرارات الشركات الصغيرة المتعاونة معها، أي أسلوبي السيطرة يشبه هذا الموقف؟</div>
+<div class="answer"><strong>الإجابة:</strong> النفوذ غير المباشر (السيطرة السياسية).</div>
+</div>
+<div class="page-number">صفحة 106</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page107">
+<div class="section-title">صفحة 107</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- اختر: الربط بين "احتلال مصر 1882م" و"السيطرة على عدن والسودان" يثبت أن محرك السياسة العسكرية البريطانية كان يعتمد في المقام الأول على:</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تأمين الطرق البحرية الحاكمة لتجارة والنفوذ الإمبراطوري.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أثبت خطأ العبارة التالية: "اعتمدت بريطانيا نمطًا سياسيًا موحدًا وثابتًا في إدارة السيطرة السياسية على جميع أقطار الوطن العربي".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. اختلفت أساليبها حسب أهمية كل منطقة وظروفها.</div>
+</div>
+<div class="page-number">صفحة 107</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page108">
+<div class="section-title">صفحة 108</div>
+<h4>الاستغلال الاقتصادي والهيمنة الثقافية</h4>
+<div class="qa-block">
+<div class="question">1- حلل العلاقة بين نشر اللغة الإنجليزية في التعليم والإدارة، والنفوذ البريطاني في الوطن العربي.</div>
+<div class="answer"><strong>الإجابة:</strong> نشر اللغة الإنجليزية ساعد في تعزيز النفوذ البريطاني وتسهيل السيطرة على الإدارة والتعليم.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- قيّم مدى خطورة الهيمنة الثقافية مقارنة بالهيمنة العسكرية والاقتصادية، مع التعليل التاريخي.</div>
+<div class="answer"><strong>الإجابة:</strong> الهيمنة الثقافية أخطر لأنها تستهدف تغيير هوية الشعوب ووعيها.</div>
+</div>
+<div class="page-number">صفحة 108</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page109">
+<div class="section-title">صفحة 109</div>
+<h4>تفكيك البنية الاجتماعية</h4>
+<div class="qa-block">
+<div class="question">1- حلل أسباب لجوء الشعوب العربية إلى المقاومة المسلحة في مواجهة الاستعمار البريطاني والإسباني.</div>
+<div class="answer"><strong>الإجابة:</strong> بسبب القمع والاستغلال، ورفض الاحتلال، والدفاع عن الوطن والهوية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- توقع واستنتج: ما النتائج التي ترتبت على انتشار روح المقاومة ومقاطعة المصالح البريطانية في هذه المستعمرة؟</div>
+<div class="answer"><strong>الإجابة:</strong> زيادة الضغوط على بريطانيا، وتعزيز الوعي الوطني، وتوحيد الصفوف.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما رأيك في دور الوعي الشعبي في مواجهة الظلم؟</div>
+<div class="answer"><strong>الإجابة:</strong> الوعي الشعبي هو الأساس في مواجهة الظلم والاستعمار.</div>
+</div>
+<div class="page-number">صفحة 109</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page110">
+<div class="section-title">صفحة 110</div>
+<h4>تدريبات الدرس</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أي من الآليات التالية تمثل أخطر أشكال السيطرة الاستعمارية على المدى الطويل؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - تفكيك البنية الاجتماعية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: ما الاستنتاج الصحيح من مقارنة دور القيادة الوطنية في مصر والمغرب؟</div>
+<div class="answer"><strong>الإجابة:</strong> ج - نجاح القيادة الوطنية ارتبط بقدرتها على تنوّع الأساليب وفقًا لطبيعة الاستعمار.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- من خلال تحليلك للخريطة، يتضح أن الاستعمار البريطاني ركّز على ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - المنافذ والممرات البحرية والمائية الحيوية المؤدية للشرق.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- نستنتج من الحدود السياسية والتظليل الموضح على الخريطة أن هناك دولة عربية واجهت تقسيمًا لنفوذها بين قوتين استعماريتين مختلفتين في آن واحد، وهي:</div>
+<div class="answer"><strong>الإجابة:</strong> ج - المغرب.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- «يرى بعض المؤرخين أن الاحتلال الإيطالي لليبيا كان بدافع هيبة الدولة، بينما يراه آخرون اقتصاديًا». ناقش الرأيين مستدلًا بالدلالة التاريخية.</div>
+<div class="answer"><strong>الإجابة:</strong> كلا الرأيين صحيح. الدافع كان هيبة الدولة (منافسة القوى الأوروبية) واقتصاديًا (استغلال الموارد).</div>
+</div>
+<div class="page-number">صفحة 110</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page113">
+<div class="section-title">صفحة 113</div>
+<h4>الأداء الصفي (أولاً: الموقع الجيوسياسي لمصر)</h4>
+<div class="qa-block">
+<div class="question">1- اختر: يقول الدكتور جمال حمدان "مصر دائمًا مركز دائرة قلت أم كبرت..." جاء كلام الدكتور جمال حمدان نتيجة ...</div>
+<div class="answer"><strong>الإجابة:</strong> ج - موقع مصر الجيوسياسي.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- أي من الرأيين التاليين تؤيد مع التبرير: ترتبط حماية الأمن القومي المصري بحماية الحدود الجغرافية للدولة، أم ترتبط بالتغيرات في موازين القوى العالمية والدوائر الإقليمية؟</div>
+<div class="answer"><strong>الإجابة:</strong> أؤيد الرأي الثاني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما النتائج التي ترتبت على: تقاطع الدوائر الحضارية والجيوسياسية الثلاث الكبرى في موقع مصر؟</div>
+<div class="answer"><strong>الإجابة:</strong> جعل مصر مركزًا للتواصل الحضاري، وبوابة لإفريقيا، ومركزًا للفكر الوسطي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- دلل: "تُعد مصر جسرًا حقيقيًا للتواصل الحضاري بين إفريقيا والعالم".</div>
+<div class="answer"><strong>الإجابة:</strong> موقعها يربط بين قارات العالم القديم، وهي حلقة وصل بين الشرق والغرب.</div>
+</div>
+<div class="page-number">صفحة 113</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page114">
+<div class="section-title">صفحة 114</div>
+<h4>الأداء المنزلي</h4>
+<div class="qa-block">
+<div class="question">1- اربط الأمن القومي المصري بالتغيرات في موازين القوى العالمية.</div>
+<div class="answer"><strong>الإجابة:</strong> التغيرات في موازين القوى العالمية تؤثر في الأمن القومي المصري، وتتطلب مرونة في السياسة الخارجية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- دلل: "تمتلك مصر تأثيرًا استراتيجيًا يتخطى حدودها الجغرافية الضيقة".</div>
+<div class="answer"><strong>الإجابة:</strong> دورها في دعم حركات التحرر، وموقعها الجغرافي، وقوتها الناعمة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- قارن بين: "الدائرة العربية" و"الدائرة الإسلامية" في كل من طبيعة الدور الذي تلعبه مصر.</div>
+<div class="answer"><strong>الإجابة:</strong> في الدائرة العربية: دور قيادي في الأمن القومي العربي. في الدائرة الإسلامية: دور في نشر الفكر الوسطي عبر الأزهر.</div>
+</div>
+<div class="page-number">صفحة 114</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page115">
+<div class="section-title">صفحة 115</div>
+<h4>السياسة الخارجية المصرية بعد 1952</h4>
+<div class="qa-block">
+<div class="question">1- اختر: ...</div>
+<div class="answer"><strong>الإجابة:</strong> أ - مبدأ عدم الانحياز واستقلال القرار.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما النتائج التي ترتبت على: إدراك مصر أن الانضمام لأحد المعسكرين أثناء الحرب الباردة يهدد استقلال قرارها؟</div>
+<div class="answer"><strong>الإجابة:</strong> تبني مبدأ عدم الانحياز، وتعزيز استقلال القرار الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ما العلاقة بين: الأمن القومي المصري والأمن القومي العربي؟</div>
+<div class="answer"><strong>الإجابة:</strong> الأمن القومي المصري جزء لا يتجزأ من الأمن القومي العربي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ساهمت أدوات القوة الناعمة في إبراز مكانة مصر إقليميًا ودوليًا.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال الإعلام والتعليم والفنون والآداب.</div>
+</div>
+<div class="page-number">صفحة 115</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page116">
+<div class="section-title">صفحة 116</div>
+<h4>القوة الناعمة المصرية</h4>
+<div class="qa-block">
+<div class="question">1- اختر: المبدأ الذي أتاح لمصر بناء علاقات واسعة مع دول العالم الثالث على أساس المساواة والاحترام المتبادل هو:</div>
+<div class="answer"><strong>الإجابة:</strong> د - مبدأ عدم الانحياز واستقلال القرار الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: ما هو الاستنتاج الأدق لرفض مصر الانضمام إلى حلف بغداد عام 1955؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تطبيق مبدأ عدم الانحياز وحماية استقلال القرار الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- أثبت صحة أو خطأ العبارة: "قامت السياسة الخارجية المصرية على التدخل في الشئون الداخلية لدول العالم الثالث لفرض الهيمنة".</div>
+<div class="answer"><strong>الإجابة:</strong> خطأ. قامت على مبدأ السيادة وعدم التدخل.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- ما العلاقة بين: وسائل الإعلام والقوة الناعمة المصرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> وسائل الإعلام هي إحدى أدوات القوة الناعمة.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- بم تفسر: الأهمية الاستراتيجية الخاصة لقناة السويس بجانب الموقع الجغرافي لمصر؟</div>
+<div class="answer"><strong>الإجابة:</strong> لأنها شريان التجارة العالمية، ومصدر مهم للدخل القومي.</div>
+</div>
+<div class="page-number">صفحة 116</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page117">
+<div class="section-title">صفحة 117</div>
+<h4>تدريبات الدرس</h4>
+<div class="qa-block">
+<div class="question">1- اختر: ...</div>
+<div class="answer"><strong>الإجابة:</strong> ج - الاستقلال في اتخاذ القرار مع المشاركة الفعالة.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: تمثل أهم الأهداف الرئيسة التي سعت إليها حركة عدم الانحياز عند تأسيسها ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - تحرير القرار الوطني من ضغوط الحرب الباردة.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- «لم تكن المكانة الإقليمية لمصر نتيجة عامل واحد، بل نتيجة تفاعل بين عدة عوامل». حلل العبارة، ثم حدد العامل الأكثر تأثيرًا من وجهة نظرك، مع التبرير.</div>
+<div class="answer"><strong>الإجابة:</strong> العوامل: الموقع الجيوسياسي، الإرادة السياسية، القوة الناعمة. الأكثر تأثيرًا: الموقع الجيوسياسي.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- يرى بعض الباحثين أن: «الموقع الجغرافي هو السبب الرئيس الوحيد في تميّز الدور المصري إقليميًا ودوليًا». ما مدى اتفاقك أو اختلافك مع العبارة السابقة؟ مدعمًا رأيك بدليل مناسب.</div>
+<div class="answer"><strong>الإجابة:</strong> أختلف. الموقع عامل مهم لكن هناك عوامل أخرى مثل الإرادة السياسية والقوة الناعمة.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- فسر العلاقة بين كلّ مما يأتي: موقع مصر بوصفها ملتقى الدوائر الثلاث ← الأمن القومي المصري.</div>
+<div class="answer"><strong>الإجابة:</strong> الموقع جعل مصر جزءًا من دوائر متعددة، مما يؤثر في أمنها القومي.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- فسر العلاقة بين: مبدأ عدم الانحياز ← استقلال القرار الوطني.</div>
+<div class="answer"><strong>الإجابة:</strong> عدم الانحياز يحمي استقلال القرار الوطني من ضغوط المعسكرات.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- فسر العلاقة بين: القوة الناعمة ← ترسيخ المكانة الإقليمية.</div>
+<div class="answer"><strong>الإجابة:</strong> القوة الناعمة تعزز صورة مصر وتزيد تأثيرها الإقليمي.</div>
+</div>
+<div class="qa-block">
+<div class="question">8- ماذا لو... لم تكن مصر تمتلك موقعًا إستراتيجيًا عند ملتقى القارات.</div>
+<div class="answer"><strong>الإجابة:</strong> لتراجع دورها الإقليمي والدولي بشكل كبير.</div>
+</div>
+<div class="qa-block">
+<div class="question">9- قارن بين: دور مصر في الدائرة العربية ودورها في الدائرة الإفريقية.</div>
+<div class="answer"><strong>الإجابة:</strong> في العربية: دور قيادي في الأمن القومي العربي. في الإفريقية: دور في دعم حركات التحرر والتنمية.</div>
+</div>
+<div class="qa-block">
+<div class="question">10- «الدولة التي تفقد سيادتها تفقد قدرتها على اتخاذ القرار، ومصر جعلت من عدم الانحياز حاميًا لهذه السيادة». استنتج: أثر غياب السيادة على المجتمع المصري تاريخيًا، والعلاقة بين عدم الانحياز والسيادة.</div>
+<div class="answer"><strong>الإجابة:</strong> غياب السيادة أدى إلى التبعية والاستغلال. عدم الانحياز يحمي السيادة.</div>
+</div>
+<div class="qa-block">
+<div class="question">11- اختر ودلّل: أيُّ العوامل التالية كان الأكثر تأثيرًا في تعزيز الدور المصري إقليميًا بعد 1952م؟</div>
+<div class="answer"><strong>الإجابة:</strong> مبدأ عدم الانحياز.</div>
+</div>
+<div class="page-number">صفحة 117</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page119">
+<div class="section-title">صفحة 119</div>
+<h4>الأداء الصفي (التحرر الوطني للجزائر)</h4>
+<div class="qa-block">
+<div class="question">1- كيف تحولت القضية الجزائرية من قضية محلية إلى قضية تحرر عربي وإفريقي؟</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال الدعم المصري السياسي والإعلامي والعسكري، وفتح أبوابها لقادة الثورة الجزائرية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- حلل دور مصر في دعم الثورة الجزائرية داخل المحافل الدولية ووسائل الإعلام العربية.</div>
+<div class="answer"><strong>الإجابة:</strong> دافعت مصر عن القضية الجزائرية في الأمم المتحدة، وسخرت إذاعة صوت العرب للتعريف بها.</div>
+</div>
+<div class="page-number">صفحة 119</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page120">
+<div class="section-title">صفحة 120</div>
+<h4>الدعم المصري للجزائر</h4>
+<div class="qa-block">
+<div class="question">1- ما العلاقة بين: "صوت العرب" والوعي بالقضية الجزائرية؟</div>
+<div class="answer"><strong>الإجابة:</strong> إذاعة صوت العرب ساعدت في زيادة الوعي بالقضية الجزائرية بين الشعوب العربية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- لعب الأزهر الشريف دورًا في دعم الهوية الإسلامية للشعب الجزائري. اشرح.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال استقبال الطلاب الجزائريين وتعليمهم العلوم العربية والإسلامية.</div>
+</div>
+<div class="page-number">صفحة 120</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page121">
+<div class="section-title">صفحة 121</div>
+<h4>التحرر الوطني لليمن</h4>
+<div class="qa-block">
+<div class="question">1- لماذا رأت مصر أن نجاح الثورة اليمنية يمثل أهمية إستراتيجية للعالم العربي؟</div>
+<div class="answer"><strong>الإجابة:</strong> لأنها تمثل نقطة إستراتيجية محورية لدعم مدخل البحر الأحمر الجنوبي عند مضيق باب المندب.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- ما العلاقة بين: نجاح الثورة اليمنية وحرب أكتوبر 1973م؟</div>
+<div class="answer"><strong>الإجابة:</strong> نجاح الثورة اليمنية ساعد في إغلاق باب المندب إبان حرب أكتوبر 1973م.</div>
+</div>
+<div class="page-number">صفحة 121</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page122">
+<div class="section-title">صفحة 122</div>
+<h4>التحرر الوطني للعراق</h4>
+<div class="qa-block">
+<div class="question">1- كيف أثر الصراع بين الاتجاه القومي العربي والنفوذ الغربي في العراق؟</div>
+<div class="answer"><strong>الإجابة:</strong> أدى إلى ثورة 14 يوليو 1958م التي أنهت النظام الملكي وأعلنت قيام الجمهورية العراقية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- حلل موقف مصر من حلف بغداد وأثره في العلاقات المصرية العراقية.</div>
+<div class="answer"><strong>الإجابة:</strong> عارضت مصر حلف بغداد لأنه أداة لزيادة النفوذ الغربي، مما دفعها لدعم التيار القومي العربي في العراق.</div>
+</div>
+<div class="page-number">صفحة 122</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page123">
+<div class="section-title">صفحة 123</div>
+<h4>التحرر الوطني لجنوب إفريقيا</h4>
+<div class="qa-block">
+<div class="question">1- لماذا عُدَّت قضية الفصل العنصري في جنوب إفريقيا قضية إنسانية عالمية؟</div>
+<div class="answer"><strong>الإجابة:</strong> لأنها تمييز عنصري ضد الأغلبية السوداء، وتتعارض مع مبادئ الحرية وحقوق الإنسان.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- وضح دور مصر والأمم المتحدة في مواجهة سياسة الفصل العنصري في جنوب إفريقيا.</div>
+<div class="answer"><strong>الإجابة:</strong> دعمت مصر المؤتمر الوطني الإفريقي بقيادة نيلسون مانديلا، وساندت حق الأغلبية الإفريقية في الحرية والمساواة.</div>
+</div>
+<div class="page-number">صفحة 123</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page124">
+<div class="section-title">صفحة 124</div>
+<h4>تدريبات الدرس</h4>
+<div class="qa-block">
+<div class="question">1- اختر: أيّ المواقف التالية يُعَبِّر بصورة أوضح عن ارتباط دعم مصر لحركات التحرر بمفهوم الأمن القومي؟</div>
+<div class="answer"><strong>الإجابة:</strong> ب - دعم الثورة اليمنية لحماية مدخل البحر الأحمر.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- اختر: يمكن الاستدلال من موقف مصر تجاه حلف بغداد على أن السياسة المصرية في عهد عبد الناصر كانت تهدف إلى ...</div>
+<div class="answer"><strong>الإجابة:</strong> ج - مقاومة النفوذ الغربي وتعزيز الاستقلال العربي.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- في ضوء الصورة المقابلة، أجب: تُعَبِّر الصورة المقابلة عن إحدى آليات دعم مصر لحركات التحرر مُعَبِّرةً بذلك عن استخدام ...</div>
+<div class="answer"><strong>الإجابة:</strong> ب - الإذاعة لدعم العراق.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- وضّح كيف تكشف الصورة عن الدور المصري في مناهضة الاستعمار ودعم حق الشعوب في تقرير مصيرها.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال دعم التيار القومي العربي ونشر أفكار الوحدة العربية والتحرر الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- ما العلاقة بين مقاومة الاستعمار في مصر، وموقفها بعد الاستقلال من دعم الشعوب الأخرى ضد الاحتلال؟</div>
+<div class="answer"><strong>الإجابة:</strong> مصر بعد استقلالها تبنت مبدأ دعم حركات التحرر في الدول العربية والإفريقية.</div>
+</div>
+<div class="page-number">صفحة 124</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div><div class="page-section" id="u4-page125">
+<div class="section-title">صفحة 125</div>
+<h4>مراجعة نهائية</h4>
+<div class="qa-block">
+<div class="question">1- «كان الموقع الجيوسياسي لمصر أحد العوامل الرئيسة في تشكيل دورها الإقليمي والدولي». ناقش العبارة.</div>
+<div class="answer"><strong>الإجابة:</strong> الموقع جعل مصر مركزًا للتواصل الحضاري، وبوابة لإفريقيا، وملتقى للدوائر العربية والإفريقية والإسلامية.</div>
+</div>
+<div class="qa-block">
+<div class="question">2- حلل العلاقة بين موقع مصر عند ملتقى الدوائر العربية والإفريقية والإسلامية، وتبنّيها قضايا التحرر الوطني.</div>
+<div class="answer"><strong>الإجابة:</strong> موقع مصر جعلها جزءًا من هذه الدوائر، مما دفعها لتبني قضايا التحرر الوطني.</div>
+</div>
+<div class="qa-block">
+<div class="question">3- ناقش كيف أثرت مبادئ السياسة الخارجية المصرية بعد ثورة 1952م في دعم حركات التحرر العربية والإفريقية والآسيوية.</div>
+<div class="answer"><strong>الإجابة:</strong> مبدأ عدم الانحياز ودعم حركات التحرر ساعد في دعم هذه الحركات.</div>
+</div>
+<div class="qa-block">
+<div class="question">4- استدل تاريخيًا على أن مصر لم تعتمد على القوة العسكرية فقط في دعم حركات التحرر، بل استخدمت أدوات سياسية وإعلامية وثقافية.</div>
+<div class="answer"><strong>الإجابة:</strong> الدعم السياسي في المحافل الدولية، والدعم الإعلامي عبر صوت العرب، والدعم الثقافي عبر الأزهر.</div>
+</div>
+<div class="qa-block">
+<div class="question">5- قارن بين الدعم السياسي والدعم الإعلامي الذي قدَّمته مصر لحركات التحرر في الجزائر وجنوب إفريقيا؛ من حيث الوسائل والأثر.</div>
+<div class="answer"><strong>الإجابة:</strong> الدعم السياسي: في المحافل الدولية. الدعم الإعلامي: عبر صوت العرب. الأثر: زيادة الوعي العالمي بالقضايا.</div>
+</div>
+<div class="qa-block">
+<div class="question">6- فسر: حرص مصر على دعم حركات التحرر الوطني في المحافل الدولية.</div>
+<div class="answer"><strong>الإجابة:</strong> لكسب التأييد الدولي، وتعزيز مكانتها الإقليمية والدولية.</div>
+</div>
+<div class="qa-block">
+<div class="question">7- حلل دور القوة الناعمة المصرية في مساندة الشعوب المحتلة.</div>
+<div class="answer"><strong>الإجابة:</strong> من خلال الإعلام والتعليم والفنون والآداب.</div>
+</div>
+<div class="qa-block">
+<div class="question">8- دلل: يُعَد دعم مصر لحركات التحرر الوطني جزءًا من حماية أمنها القومي ومكانتها الإقليمية.</div>
+<div class="answer"><strong>الإجابة:</strong> استمرار الاحتلال في محيط مصر يهدد أمنها القومي، ودعم حركات التحرر يعزز مكانتها.</div>
+</div>
+<div class="qa-block">
+<div class="question">9- إلى أي مدى اختلف الاحتلال البريطاني عن الاحتلال الفرنسي في المنطقة العربية؟</div>
+<div class="answer"><strong>الإجابة:</strong> البريطاني اعتمد على النفوذ غير المباشر، والفرنسي اعتمد على الاحتلال المباشر والهيمنة الثقافية.</div>
+</div>
+<div class="qa-block">
+<div class="question">10- ناقش العبارة: «لم يكن الاحتلال الأوروبي في الدول العربية والإفريقية والآسيوية احتلالًا عسكريًا فقط، بل كان مشروعًا للسيطرة الاقتصادية والثقافية». مع تبرير رأيك بدليل تاريخي مناسب.</div>
+<div class="answer"><strong>الإجابة:</strong> نعم، جمع بين السيطرة العسكرية والاستغلال الاقتصادي والهيمنة الثقافية.</div>
+</div>
+<div class="qa-block">
+<div class="question">11- قارن بين أساليب الاحتلال الأوروبي وأساليب مقاومة الشعوب المحتلة، موضحًا أثر كلٍّ منها في تطوُّر حركات التحرر.</div>
+<div class="answer"><strong>الإجابة:</strong> الاحتلال استخدم القوة والاستغلال والهيمنة الثقافية، والمقاومة استخدمت المقاومة المسلحة والعمل السياسي والتنظيمي.</div>
+</div>
+<div class="qa-block">
+<div class="question">12- ما العلاقة بين: التنسيق بين حركات التحرر المختلفة ونجاحها في مواجهة الاستعمار؟</div>
+<div class="answer"><strong>الإجابة:</strong> التنسيق أدى إلى توحيد الجهود وزيادة الفاعلية.</div>
+</div>
+<div class="qa-block">
+<div class="question">13- ماذا لو... لم تمتلك مصر أدوات إعلامية وثقافية مُؤثِّرة بعد ثورة 1952م.</div>
+<div class="answer"><strong>الإجابة:</strong> لتراجع دورها في دعم حركات التحرر، ولقل تأثيرها الإقليمي.</div>
+</div>
+<div class="page-number">صفحة 125</div>
+<a class="back-to-top" onclick="scrollToTop()">▲ الرجوع لأعلى</a>
+</div></section><script>
+const ALL_PAGES = [{"id": "u1-page4", "n": 4, "unit": "unit-1"}, {"id": "u1-page5", "n": 5, "unit": "unit-1"}, {"id": "u1-page6", "n": 6, "unit": "unit-1"}, {"id": "u1-page7", "n": 7, "unit": "unit-1"}, {"id": "u1-page7b", "n": 7, "unit": "unit-1"}, {"id": "u1-page8", "n": 8, "unit": "unit-1"}, {"id": "u1-page8b", "n": 8, "unit": "unit-1"}, {"id": "u1-page9", "n": 9, "unit": "unit-1"}, {"id": "u1-page9b", "n": 9, "unit": "unit-1"}, {"id": "u1-page10", "n": 10, "unit": "unit-1"}, {"id": "u1-page11", "n": 11, "unit": "unit-1"}, {"id": "u1-page11b", "n": 11, "unit": "unit-1"}, {"id": "u1-page12", "n": 12, "unit": "unit-1"}, {"id": "u2-page35", "n": 35, "unit": "unit-2"}, {"id": "u2-page36", "n": 36, "unit": "unit-2"}, {"id": "u2-page36b", "n": 36, "unit": "unit-2"}, {"id": "u2-page37", "n": 37, "unit": "unit-2"}, {"id": "u2-page38", "n": 38, "unit": "unit-2"}, {"id": "u2-page39", "n": 39, "unit": "unit-2"}, {"id": "u2-page40", "n": 40, "unit": "unit-2"}, {"id": "u2-page41", "n": 41, "unit": "unit-2"}, {"id": "u2-page42", "n": 42, "unit": "unit-2"}, {"id": "u2-page43", "n": 43, "unit": "unit-2"}, {"id": "u2-page45", "n": 45, "unit": "unit-2"}, {"id": "u2-page46", "n": 46, "unit": "unit-2"}, {"id": "u2-page46b", "n": 46, "unit": "unit-2"}, {"id": "u2-page47", "n": 47, "unit": "unit-2"}, {"id": "u2-page47b", "n": 47, "unit": "unit-2"}, {"id": "u2-page48", "n": 48, "unit": "unit-2"}, {"id": "u2-page49", "n": 49, "unit": "unit-2"}, {"id": "u2-page50", "n": 50, "unit": "unit-2"}, {"id": "u2-page50b", "n": 50, "unit": "unit-2"}, {"id": "u2-page51", "n": 51, "unit": "unit-2"}, {"id": "u2-page51b", "n": 51, "unit": "unit-2"}, {"id": "u2-page52", "n": 52, "unit": "unit-2"}, {"id": "u2-page52b", "n": 52, "unit": "unit-2"}, {"id": "u2-page53", "n": 53, "unit": "unit-2"}, {"id": "u2-page56", "n": 56, "unit": "unit-2"}, {"id": "u2-page57", "n": 57, "unit": "unit-2"}, {"id": "u2-page57b", "n": 57, "unit": "unit-2"}, {"id": "u2-page58", "n": 58, "unit": "unit-2"}, {"id": "u2-page59", "n": 59, "unit": "unit-2"}, {"id": "u3-page60", "n": 60, "unit": "unit-3"}, {"id": "u3-page61", "n": 61, "unit": "unit-3"}, {"id": "u3-page62", "n": 62, "unit": "unit-3"}, {"id": "u3-page63", "n": 63, "unit": "unit-3"}, {"id": "u3-page64", "n": 64, "unit": "unit-3"}, {"id": "u3-page65", "n": 65, "unit": "unit-3"}, {"id": "u3-page66", "n": 66, "unit": "unit-3"}, {"id": "u3-page67", "n": 67, "unit": "unit-3"}, {"id": "u3-page68", "n": 68, "unit": "unit-3"}, {"id": "u4-page96", "n": 96, "unit": "unit-4"}, {"id": "u4-page97", "n": 97, "unit": "unit-4"}, {"id": "u4-page98", "n": 98, "unit": "unit-4"}, {"id": "u4-page99", "n": 99, "unit": "unit-4"}, {"id": "u4-page100", "n": 100, "unit": "unit-4"}, {"id": "u4-page101", "n": 101, "unit": "unit-4"}, {"id": "u4-page102", "n": 102, "unit": "unit-4"}, {"id": "u4-page103", "n": 103, "unit": "unit-4"}, {"id": "u4-page106", "n": 106, "unit": "unit-4"}, {"id": "u4-page107", "n": 107, "unit": "unit-4"}, {"id": "u4-page108", "n": 108, "unit": "unit-4"}, {"id": "u4-page109", "n": 109, "unit": "unit-4"}, {"id": "u4-page110", "n": 110, "unit": "unit-4"}, {"id": "u4-page113", "n": 113, "unit": "unit-4"}, {"id": "u4-page114", "n": 114, "unit": "unit-4"}, {"id": "u4-page115", "n": 115, "unit": "unit-4"}, {"id": "u4-page116", "n": 116, "unit": "unit-4"}, {"id": "u4-page117", "n": 117, "unit": "unit-4"}, {"id": "u4-page119", "n": 119, "unit": "unit-4"}, {"id": "u4-page120", "n": 120, "unit": "unit-4"}, {"id": "u4-page121", "n": 121, "unit": "unit-4"}, {"id": "u4-page122", "n": 122, "unit": "unit-4"}, {"id": "u4-page123", "n": 123, "unit": "unit-4"}, {"id": "u4-page124", "n": 124, "unit": "unit-4"}, {"id": "u4-page125", "n": 125, "unit": "unit-4"}];
+const UNITS = [{"id": "unit-1", "title": "الوحدة الأولى: مصر بين الماضي والحاضر", "first": 4, "last": 12}, {"id": "unit-2", "title": "الوحدة الثانية: تحولات القوة وبناء الوعي بمصر في العصر الحديث والمعاصر", "first": 35, "last": 59}, {"id": "unit-3", "title": "unit-3", "first": 60, "last": 68}, {"id": "unit-4", "title": "الوحدة الثالثة: مصر وقضايا التحرر الوطني في الوطن العربي وإفريقيا", "first": 96, "last": 125}];
+const unitTabs = document.getElementById("unitTabs");
+const pageTabs = document.getElementById("pageTabs");
+const statusText = document.getElementById("statusText");
+
+function scrollToPage(id){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const nav=document.getElementById("mainNav");
+  const offset=(nav?nav.offsetHeight:0)+10;
+  window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-offset,behavior:"smooth"});
+  document.querySelectorAll(".page-btn").forEach(b=>b.classList.toggle("active",b.dataset.target===id));
+}
+
+function showUnit(unitId, doScroll=true){
+  document.querySelectorAll(".unit-section").forEach(u=>{
+    u.style.display=(u.id===unitId)?"":"none";
+  });
+  document.querySelectorAll(".unit-btn").forEach(b=>b.classList.toggle("active",b.dataset.unit===unitId));
+  document.querySelectorAll(".page-btn").forEach(b=>{
+    b.style.display=(b.dataset.unit===unitId)?"inline-block":"none";
+  });
+  const unit=UNITS.find(u=>u.id===unitId);
+  if(unit) statusText.textContent=`${unit.title} — صفحات الكتاب من ${unit.first} إلى ${unit.last}`;
+  if(doScroll) document.getElementById(unitId)?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function scrollToTop(){window.scrollTo({top:0,behavior:"smooth"});}
+
+document.querySelectorAll(".unit-btn").forEach(b=>b.addEventListener("click",()=>showUnit(b.dataset.unit,true)));
+document.querySelectorAll(".page-btn").forEach(b=>b.addEventListener("click",()=>scrollToPage(b.dataset.target)));
+
+// Start at the first unit in the actual book order.
+showUnit(UNITS[0]?.id,false);
+</script></body>
+</html>
